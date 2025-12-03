@@ -1,0 +1,97 @@
+<section class="about-wrapper">
+    <!-- Hero / Presentación -->
+    <div class="about-hero">
+        <h1>{{ 'about.title' | translate }}</h1>
+        <p class="hero-subtitle">
+            {{ 'about.hero' | translate }}
+        </p>
+    </div>
+
+    <!-- Sección: Perfil profesional -->
+    <div class="profile-section card fade-in">
+        <h2>{{ 'about.profileTitle' | translate }}</h2>
+        <p>
+            {{ 'about.profileText' | translate }}
+        </p>
+    </div>
+
+    <!-- Intereses técnicos -->
+    <div class="interests-section card fade-in">
+        <h2>{{ 'about.areasTitle' | translate }}</h2>
+
+        <ul class="interests-grid">
+            <li>
+                <h3>{{ 'about.areas.webTitle' | translate }}</h3>
+                <p>{{ 'about.areas.webText' | translate }}</p>
+            </li>
+
+            <li>
+                <h3>{{ 'about.areas.aiTitle' | translate }}</h3>
+                <p>{{ 'about.areas.aiText' | translate }}</p>
+            </li>
+
+            <li>
+                <h3>{{ 'about.areas.dataTitle' | translate }}</h3>
+                <p>{{ 'about.areas.dataText' | translate }}</p>
+            </li>
+
+            <li>
+                <h3>{{ 'about.areas.cloudTitle' | translate }}</h3>
+                <p>{{ 'about.areas.cloudText' | translate }}</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Experiencia -->
+    <div class="experience-section card fade-in">
+        <h2>{{ 'about.experienceTitle' | translate }}</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="date">{{ 'about.exp.uahDate' | translate }}</span>
+                <h3>{{ 'about.exp.uahRole' | translate }}</h3>
+                <p class="company">{{ 'about.exp.uahCompany' | translate }}</p>
+                <p class="desc">
+                    {{ 'about.exp.uahDesc' | translate }}
+                </p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="date">{{ 'about.exp.indraDate' | translate }}</span>
+                <h3>{{ 'about.exp.indraRole' | translate }}</h3>
+                <p class="company">{{ 'about.exp.indraCompany' | translate }}</p>
+                <p class="desc">
+                    {{ 'about.exp.indraDesc' | translate }}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Proyectos destacados -->
+    <div class="projects-highlight-section card fade-in">
+        <h2>{{ 'about.projectsTitle' | translate }}</h2>
+
+        <div class="projects-placeholder">
+            <p>
+                {{ 'about.projectsIntro' | translate }}
+            </p>
+
+            <ul>
+                <li>
+                    <strong>{{ 'about.projects.aTitle' | translate }}:</strong>
+                    {{ 'about.projects.aText' | translate }}
+                </li>
+                <li>
+                    <strong>{{ 'about.projects.bTitle' | translate }}:</strong>
+                    {{ 'about.projects.bText' | translate }}
+                </li>
+                <li>
+                    <strong>{{ 'about.projects.cTitle' | translate }}:</strong>
+                    {{ 'about.projects.cText' | translate }}
+                </li>
+            </ul>
+
+            <p class="note">{{ 'about.projectsNote' | translate }}</p>
+        </div>
+    </div>
+</section>

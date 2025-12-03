@@ -1,0 +1,41 @@
+{
+    "about": {
+        "title": "Sobre mí",
+        "hero": "Soy un apasionado de la tecnología con especial interés en el desarrollo web, la inteligencia artificial, el análisis de datos y la arquitectura cloud. Me motiva crear soluciones útiles, escalables y elegantes.",
+        "profileTitle": "Perfil profesional",
+        "profileText": "Me considero una persona curiosa, constante y orientada a aprender. Disfruto trabajando en proyectos donde puedo combinar desarrollo, automatización, despliegue en la nube y buenas prácticas de CI/CD.",
+        "areasTitle": "Áreas que me apasionan",
+        "areas": {
+            "webTitle": "Desarrollo Web",
+            "webText": "Creación de aplicaciones modernas con Angular, TypeScript y APIs REST.",
+            "aiTitle": "Inteligencia Artificial",
+            "aiText": "Modelos ligeros, clasificación, embeddings y automatización con IA.",
+            "dataTitle": "Datos",
+            "dataText": "Extracción, análisis y visualización para obtener valor real.",
+            "cloudTitle": "Cloud & DevOps",
+            "cloudText": "Despliegues en la nube, CI/CD, contenedores y automatización con pipelines."
+        },
+        "experienceTitle": "Experiencia",
+        "exp": {
+            "uahDate": "2020 — 2023",
+            "uahRole": "Ayudante de Investigación",
+            "uahCompany": "Universidad de Alcalá",
+            "uahDesc": "Investigación aplicada en tecnologías emergentes, prototipado de herramientas internas, gestión de datos y desarrollo de pequeños módulos software para estudios experimentales. Trabajo colaborativo con grupos de investigación.",
+            "indraDate": "2024 — Actualidad",
+            "indraRole": "Desarrollador / Consultor Técnico",
+            "indraCompany": "Indra",
+            "indraDesc": "Desarrollo de soluciones internas, mantenimiento de aplicaciones, integración de APIs, pipelines CI/CD y soporte en despliegues. Participación en proyectos reales con clientes e infraestructuras complejas."
+        },
+        "projectsTitle": "Proyectos destacados",
+        "projectsIntro": "Aquí puedes añadir una breve descripción de algunos proyectos relevantes:",
+        "projects": {
+            "aTitle": "Proyecto A",
+            "aText": "Aplicación web de análisis de datos en tiempo real, con dashboard, filtros y consumo de API. (Descripción inventada)",
+            "bTitle": "Proyecto B",
+            "bText": "Sistema de automatización de despliegues con CI/CD, Docker y GitHub Actions. (Descripción inventada)",
+            "cTitle": "Proyecto C",
+            "cText": "Aplicación experimental usando IA para clasificación de texto. (Descripción inventada)"
+        },
+        "projectsNote": "Más información en la sección Proyectos."
+    }
+}

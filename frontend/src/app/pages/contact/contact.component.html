@@ -1,0 +1,79 @@
+<section class="contact-wrapper fade-in">
+    <h2 class="fade-slide">Contacto</h2>
+
+    <p class="contact-intro fade-in" style="animation-delay: .15s;">
+        Si quieres ponerte en contacto conmigo para hablar sobre oportunidades,
+        colaborar en un proyecto o simplemente hacer una consulta, puedes utilizar
+        el formulario o cualquiera de los medios que encontrarás a continuación.
+    </p>
+
+    <div class="contact-layout fade-in" style="animation-delay: .25s;">
+
+        <!-- Columna: información de contacto -->
+        <div class="contact-info fade-in" style="animation-delay: .35s;">
+            <h3 class="fade-slide" style="animation-delay: .4s;">Información de contacto</h3>
+
+            <ul class="contact-list">
+                <li>
+                    <span class="label">Email</span>
+                    <a href="javirg10@gmail.com">javirg10&#64;gmail.com</a>
+                </li>
+                <li>
+                    <span class="label">Ubicación</span>
+                    <span>Alcalá de Henares, Madrid</span>
+                </li>
+                <li>
+                    <span class="label">LinkedIn</span>
+                    <a href="https://www.linkedin.com/in/f-javier-redondo-garc%C3%ADa-59040b193/" target="_blank"
+                        rel="noopener noreferrer">
+                        linkedin.com/fjavierredondo
+                    </a>
+                </li>
+                <li>
+                    <span class="label">GitHub</span>
+                    <a href="https://github.com/javirg11" target="_blank" rel="noopener noreferrer">
+                        github.com/javirg11
+                    </a>
+                </li>
+            </ul>
+
+            <p class="contact-note fade-in" style="animation-delay: .45s;">
+                Intento responder lo antes posible a todos los mensajes relacionados con
+                desarrollo, formación y proyectos tecnológicos.
+            </p>
+        </div>
+
+        <!-- Columna: formulario de contacto -->
+        <div class="contact-form-card fade-in" style="animation-delay: .35s;">
+            <h3 class="fade-slide" style="animation-delay: .4s;">Envíame un mensaje</h3>
+
+            <form class="contact-form" (submit)="$event.preventDefault()">
+
+                <div class="form-row fade-in" style="animation-delay: .45s;">
+                    <label for="name">Nombre</label>
+                    <input id="name" type="text" name="name" placeholder="Tu nombre" required />
+                </div>
+
+                <div class="form-row fade-in" style="animation-delay: .5s;">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="tu.email@ejemplo.com" required />
+                </div>
+
+                <div class="form-row fade-in" style="animation-delay: .55s;">
+                    <label for="subject">Asunto</label>
+                    <input id="subject" type="text" name="subject" placeholder="Motivo del mensaje" />
+                </div>
+
+                <div class="form-row fade-in" style="animation-delay: .6s;">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="Cuéntame brevemente en qué puedo ayudarte" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit fade-in" style="animation-delay: .7s;">
+                    Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+{
+    "about": {
+        "title": "About me",
+        "hero": "I am passionate about technology with a particular interest in web development, artificial intelligence, data analysis and cloud architecture. I enjoy building useful, scalable and elegant solutions.",
+        "profileTitle": "Professional profile",
+        "profileText": "I consider myself curious, consistent and eager to learn. I enjoy working on projects where I can combine development, automation, cloud deployments and CI/CD best practices.",
+        "areasTitle": "Areas that I’m passionate about",
+        "areas": {
+            "webTitle": "Web Development",
+            "webText": "Building modern applications with Angular, TypeScript and REST APIs.",
+            "aiTitle": "Artificial Intelligence",
+            "aiText": "Lightweight models, classification, embeddings and automation with AI.",
+            "dataTitle": "Data",
+            "dataText": "Extraction, analysis and visualisation to obtain real value.",
+            "cloudTitle": "Cloud & DevOps",
+            "cloudText": "Cloud deployments, CI/CD, containers and automation with pipelines."
+        },
+        "experienceTitle": "Experience",
+        "exp": {
+            "uahDate": "2020 — 2023",
+            "uahRole": "Research Assistant",
+            "uahCompany": "Universidad de Alcalá",
+            "uahDesc": "Applied research on emerging technologies, internal tool prototyping, data management and development of small software modules for experimental studies. Collaborative work with research groups.",
+            "indraDate": "2024 — Present",
+            "indraRole": "Developer / Technical Consultant",
+            "indraCompany": "Indra",
+            "indraDesc": "Development of internal solutions, application maintenance, API integrations, CI/CD pipelines and deployment support. Participation in real projects with clients and complex infrastructures."
+        },
+        "projectsTitle": "Highlighted projects",
+        "projectsIntro": "Here you can add a short description of some relevant projects:",
+        "projects": {
+            "aTitle": "Project A",
+            "aText": "Web application for real-time data analysis with dashboard, filters and API consumption. (Sample description)",
+            "bTitle": "Project B",
+            "bText": "Deployment automation system with CI/CD, Docker and GitHub Actions. (Sample description)",
+            "cTitle": "Project C",
+            "cText": "Experimental application using AI for text classification. (Sample description)"
+        },
+        "projectsNote": "More information in the Projects section."
+    }
+}

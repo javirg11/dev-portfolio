@@ -1,0 +1,171 @@
+.about-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: system-ui, sans-serif;
+}
+
+/* HERO */
+.about-hero {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    animation: fadeSlideDown 0.6s ease-out;
+}
+
+.about-hero h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* Cards genéricas */
+.card {
+    background: #ffffff;
+    padding: 1.8rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    margin-bottom: 2rem;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+/* Fade-in animation for each block */
+.fade-in {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Interests grid */
+.interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.interests-grid li {
+    background: #f9fafb;
+    padding: 1.2rem;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.interests-grid li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.interests-grid h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+}
+
+.interests-grid p {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    margin-left: 0.8rem;
+    border-left: 3px solid #e5e7eb;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.timeline-item {
+    margin-bottom: 1.8rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.15rem;
+    top: 0.3rem;
+    width: 14px;
+    height: 14px;
+    background: #4f46e5;
+    border-radius: 50%;
+}
+
+.timeline-item .date {
+    font-size: 0.85rem;
+    color: #4f46e5;
+    font-weight: 600;
+}
+
+.company {
+    font-size: 0.95rem;
+    color: #6b7280;
+}
+
+.desc {
+    margin-top: 0.4rem;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Projects placeholder */
+.projects-placeholder ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+}
+
+.projects-placeholder li {
+    margin-bottom: 0.6rem;
+    color: #444;
+}
+
+.projects-placeholder .note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .about-wrapper {
+        padding: 1.5rem 1rem;
+    }
+
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+}

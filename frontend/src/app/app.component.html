@@ -1,0 +1,41 @@
+<!-- app.component.html -->
+<header class="main-header">
+    <div class="header-inner">
+        <h1 class="logo">Mi portfolio</h1>
+
+        <nav class="main-nav">
+            <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                Sobre mí
+            </a>
+            <a routerLink="/work" routerLinkActive="active">
+                Proyectos
+            </a>
+            <a routerLink="/formation" routerLinkActive="active">
+                Formación
+            </a>
+            <a routerLink="/contact" routerLinkActive="active">
+                Contacto
+            </a>
+        </nav>
+
+        <div class="lang-switcher">
+            <button type="button" [class.active]="currentLang === 'es'" (click)="changeLang('es')">
+                ES
+            </button>
+            <button type="button" [class.active]="currentLang === 'en'" (click)="changeLang('en')">
+                EN
+            </button>
+            <button type="button" [class.active]="currentLang === 'de'" (click)="changeLang('de')">
+                DE
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="page-content">
+    <router-outlet></router-outlet>
+</main>
+
+<footer class="main-footer">
+    © 2025 - Mi portfolio
+</footer>

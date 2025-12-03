@@ -1,0 +1,41 @@
+{
+    "about": {
+        "title": "Über mich",
+        "hero": "Ich bin technologiebegeistert und interessiere mich besonders für Webentwicklung, künstliche Intelligenz, Datenanalyse und Cloud-Architektur. Es motiviert mich, nützliche, skalierbare und elegante Lösungen zu erstellen.",
+        "profileTitle": "Berufliches Profil",
+        "profileText": "Ich sehe mich als neugierige, beständige und lernorientierte Person. Ich arbeite gerne an Projekten, in denen ich Entwicklung, Automatisierung, Cloud-Deployments und CI/CD Best Practices kombinieren kann.",
+        "areasTitle": "Bereiche, die mich begeistern",
+        "areas": {
+            "webTitle": "Webentwicklung",
+            "webText": "Erstellung moderner Anwendungen mit Angular, TypeScript und REST-APIs.",
+            "aiTitle": "Künstliche Intelligenz",
+            "aiText": "Leichte Modelle, Klassifikation, Embeddings und Automatisierung mit KI.",
+            "dataTitle": "Daten",
+            "dataText": "Extraktion, Analyse und Visualisierung, um echten Mehrwert zu schaffen.",
+            "cloudTitle": "Cloud & DevOps",
+            "cloudText": "Cloud-Deployments, CI/CD, Container und automatisierte Pipelines."
+        },
+        "experienceTitle": "Berufserfahrung",
+        "exp": {
+            "uahDate": "2020 — 2023",
+            "uahRole": "Wissenschaftliche Hilfskraft",
+            "uahCompany": "Universidad de Alcalá",
+            "uahDesc": "Angewandte Forschung zu neuen Technologien, Prototyping interner Tools, Datenmanagement und Entwicklung kleiner Softwaremodule für experimentelle Studien. Zusammenarbeit mit Forschungsgruppen.",
+            "indraDate": "2024 — Heute",
+            "indraRole": "Entwickler / Technischer Berater",
+            "indraCompany": "Indra",
+            "indraDesc": "Entwicklung interner Lösungen, Wartung von Anwendungen, API-Integration, CI/CD-Pipelines und Unterstützung bei Deployments. Mitarbeit in realen Kundenprojekten mit komplexen Infrastrukturen."
+        },
+        "projectsTitle": "Ausgewählte Projekte",
+        "projectsIntro": "Hier kannst du eine kurze Beschreibung einiger relevanter Projekte hinzufügen:",
+        "projects": {
+            "aTitle": "Projekt A",
+            "aText": "Webanwendung zur Echtzeit-Datenanalyse mit Dashboard, Filtern und API-Nutzung. (Beispielbeschreibung)",
+            "bTitle": "Projekt B",
+            "bText": "System zur Deployment-Automatisierung mit CI/CD, Docker und GitHub Actions. (Beispielbeschreibung)",
+            "cTitle": "Projekt C",
+            "cText": "Experimentelle Anwendung mit KI zur Textklassifizierung. (Beispielbeschreibung)"
+        },
+        "projectsNote": "Mehr Informationen im Bereich Projekte."
+    }
+}

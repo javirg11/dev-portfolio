@@ -1,0 +1,21 @@
+# Node / Angular
+frontend/node_modules/
+frontend/dist/
+
+# Python
+backends/**/__pycache__/
+backends/**/*.pyc
+backends/**/.venv/
+
+# Datos grandes (reales, no muestras)
+backends/**/data/raw/*
+backends/**/data/processed/*
+!backends/**/data/raw/README.md
+!backends/**/data/processed/README.md
+
+# Entornos / config
+.env
+*.env
+
+# Jupyter
+backends/**/notebooks/.ipynb_checkpoints/

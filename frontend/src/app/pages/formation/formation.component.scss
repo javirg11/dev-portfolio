@@ -1,0 +1,173 @@
+.formation-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.formation-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.formation-intro {
+    margin-bottom: 2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.formation-block {
+    margin-bottom: 2.5rem;
+}
+
+.formation-block h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.formation-block h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin-top: 0.4rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #4f46e5, #22c55e);
+}
+
+/* Tarjetas de formación reglada */
+
+.education-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid #4f46e5;
+}
+
+.education-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 0.6rem;
+}
+
+.education-date {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4f46e5;
+    background: #eef2ff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    align-self: flex-start;
+}
+
+.education-card h4 {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.education-center {
+    margin: 0.2rem 0;
+    font-weight: 500;
+}
+
+.education-location {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.education-description {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.education-details {
+    padding-left: 1.2rem;
+    margin: 0;
+    color: #555;
+}
+
+.education-details li {
+    margin-bottom: 0.3rem;
+}
+
+/* Enlace a títulos oficiales */
+
+.cert-link-box {
+    margin-top: 1.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+}
+
+.cert-link-box p {
+    margin: 0 0 0.5rem;
+    color: #555;
+}
+
+.cert-link {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid #4f46e5;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.cert-link:hover {
+    background: #4f46e5;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Cursos y certificaciones */
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+}
+
+.course-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e7eb;
+}
+
+.course-card h4 {
+    margin: 0 0 0.4rem;
+    font-size: 1.1rem;
+}
+
+.course-meta {
+    margin: 0 0 0.7rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.course-description {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .formation-wrapper {
+        padding: 1.5rem 1rem;
+    }
+
+    .education-card {
+        padding: 1.25rem 1.35rem;
+    }
+}
