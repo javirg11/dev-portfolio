@@ -2,6 +2,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 export interface ReviewRequest {
   text: string;
@@ -19,7 +20,7 @@ export interface ReviewResponse {
 export class SentimentChatService {
 
   // 🔹 De momento, API local. Más adelante usaremos environment.* para prod.
-  private apiUrl = 'http://localhost:8000';
+  private apiUrl = environment.apiBaseUrl;
 
   constructor(private http: HttpClient) { }
 
