@@ -1,0 +1,23 @@
+<div class="sentiment-chat">
+    <h2>Sentiment Chat</h2>
+    <p class="subtitle">
+        Type a short review and I will analyze its sentiment using a Machine Learning model I trained with Python.
+    </p>
+
+    <textarea [(ngModel)]="userText" rows="4" placeholder="Write your review here..."></textarea>
+
+    <button (click)="analyze()" [disabled]="loading">
+        {{ loading ? 'Analyzing...' : 'Analyze sentiment' }}
+    </button>
+
+    <p class="error" *ngIf="error">{{ error }}</p>
+
+    <div class="result" *ngIf="lastResponse as response">
+        <h3>Result</h3>
+        <p><strong>Sentiment:</strong> {{ lastResponse.sentiment }}</p>
+        <p><strong>Confidence:</strong> {{ lastResponse.confidence | number:'1.2-2' }}</p>
+        <p *ngIf="lastResponse.explanation">
+            <strong>Explanation:</strong> {{ lastResponse.explanation }}
+        </p>
+    </div>
+</div>

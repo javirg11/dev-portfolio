@@ -12,15 +12,10 @@ import { routes } from './app/app.routes';
 bootstrapApplication(AppComponent, {
   providers: [
     provideRouter(routes),
-
-    // Http moderno (en vez de HttpClientModule)
     provideHttpClient(),
-
-    // Módulo de traducción
     importProvidersFrom(
       TranslateModule.forRoot({
         defaultLanguage: 'en'
-        // No pongas loader aquí, lo gestionamos con provideTranslateHttpLoader
       })
     ),
 

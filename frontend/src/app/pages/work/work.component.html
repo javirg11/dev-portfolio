@@ -69,8 +69,12 @@
             <div class="info-links " *ngIf="p.demoUrl || p.repoUrl" style="animation-delay: .3s;">
                 <h4>Enlaces</h4>
                 <div class="info-links-buttons">
-                    <a *ngIf="p.demoUrl" [href]="p.demoUrl" target="_blank" rel="noopener noreferrer"
-                        class="link-btn primary">
+                    <a *ngIf="p.internalRoute" [routerLink]="p.internalRoute" class="link-btn primary">
+                        Ver demo
+                    </a>
+
+                    <a *ngIf="!p.internalRoute && p.demoUrl" [href]="p.demoUrl" target="_blank"
+                        rel="noopener noreferrer" class="link-btn primary">
                         Ver demo
                     </a>
                     <a *ngIf="p.repoUrl" [href]="p.repoUrl" target="_blank" rel="noopener noreferrer"

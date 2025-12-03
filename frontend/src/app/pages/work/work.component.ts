@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 interface Project {
   id: number;
@@ -10,16 +11,21 @@ interface Project {
   role: string;
   year: string;
   demoUrl?: string;
+  internalRoute?: string;
   repoUrl?: string;
 }
 
 @Component({
   selector: 'app-work',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './work.component.html',
   styleUrl: './work.component.scss'
 })
 export class WorkComponent {
+
+  constructor(private router: Router) { }
+
+
   projects: Project[] = [
     {
       id: 1,
@@ -35,13 +41,14 @@ export class WorkComponent {
     },
     {
       id: 2,
-      title: 'Gestor de Tareas',
+      title: 'Chat IA para reviews',
       shortDesc: 'App CRUD sencilla para gestionar tareas diarias.',
       longDesc:
         'Proyecto para practicar formularios reactivos, validaciones y manejo de estado en el cliente.',
       techs: ['Angular', 'Reactive Forms'],
       role: 'Diseño y desarrollo de la interfaz',
       year: '2023',
+      internalRoute: '/projects/sentiment-chat',
     },
     {
       id: 3,
@@ -78,7 +85,10 @@ export class WorkComponent {
   }
 
   openDemo(project: Project) {
-    if (project.demoUrl) {
+    if (project.internalRoute) {
+      // Demo dentro del propio Angular (navegación interna)
+      this.router.navigate([project.internalRoute]);
+    } else if (project.demoUrl) {
       window.open(project.demoUrl, '_blank');
     } else {
       alert('La demo aún no está disponible.');
