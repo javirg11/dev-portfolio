@@ -169,3 +169,16 @@
         padding: 1.3rem;
     }
 }
+
+.feedback {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.feedback.success {
+    color: #047857; // verde
+}
+
+.feedback.error {
+    color: #b91c1c; // rojo
+}

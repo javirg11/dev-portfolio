@@ -1,9 +1,9 @@
 {
     "about": {
         "title": "Sobre mí",
-        "hero": "Soy un apasionado de la tecnología con especial interés en el desarrollo web, la inteligencia artificial, el análisis de datos y la arquitectura cloud. Me motiva crear soluciones útiles, escalables y elegantes.",
+        "hero": "¡Hola! Soy un apasionado de la tecnología con una base sólida en programación. Especialmente me interesa el desarrollo software, la inteligencia artificial y la gestión de datos, así como todo lo relativo a despliegues en la nube, integración de APIs y automatización mediante pipelines CI/CD.",
         "profileTitle": "Perfil profesional",
-        "profileText": "Me considero una persona curiosa, constante y orientada a aprender. Disfruto trabajando en proyectos donde puedo combinar desarrollo, automatización, despliegue en la nube y buenas prácticas de CI/CD.",
+        "profileText": "Me considero una persona orientada a mejorar y aprender las tecnologías más punteras. Disfruto mucho de proyectos en los que la arquitectura y la calidad del código son prioritarias. Tengo experiencia trabajando en entornos colaborativos y multidisciplinares, lo que me ha permitido desarrollar habilidades de comunicación y trabajo en equipo. He creado este portfolio para poder presentarme de manera más completa y para que sea un lugar donde puedo almacenar los proyectos que voy desarrollando en mi carrera y evitar así que se pierdan en el agujero negro de GitHub.",
         "areasTitle": "Áreas que me apasionan",
         "areas": {
             "webTitle": "Desarrollo Web",
@@ -27,14 +27,16 @@
             "indraDesc": "Desarrollo de soluciones internas, mantenimiento de aplicaciones, integración de APIs, pipelines CI/CD y soporte en despliegues. Participación en proyectos reales con clientes e infraestructuras complejas."
         },
         "projectsTitle": "Proyectos destacados",
-        "projectsIntro": "Aquí puedes añadir una breve descripción de algunos proyectos relevantes:",
+        "projectsIntro": "Algunos de los proyectos en los que he trabajado más interantes a mi gusto:",
         "projects": {
-            "aTitle": "Proyecto A",
-            "aText": "Aplicación web de análisis de datos en tiempo real, con dashboard, filtros y consumo de API. (Descripción inventada)",
-            "bTitle": "Proyecto B",
-            "bText": "Sistema de automatización de despliegues con CI/CD, Docker y GitHub Actions. (Descripción inventada)",
-            "cTitle": "Proyecto C",
-            "cText": "Aplicación experimental usando IA para clasificación de texto. (Descripción inventada)"
+            "aTitle": "Detección de niveles de actividad física aplicando IA",
+            "aText": "Proyecto de investigación que recoge datos mediante IMUs ad hoc, los procesa y entrena modelos de ML para detectar niveles de actividad física en pacientes. Los modelos se validaron posteriormente en estudios reales de fisioterapia.",
+            "bTitle": "Automatización de pruebas médicas con sensores y app móvil",
+            "bText": "Desarrollo de una app móvil conectada a sensores médicos para registrar pruebas clínicas y almacenar los datos en una base de datos central. Integración con una web que mostraba gráficas, historiales y roles de usuario.",
+            "cTitle": "Librería GIS web para aplicaciones de defensa",
+            "cText": "Implementación de una librería web GIS con arquitectura desacoplada para reutilización en múltiples proyectos. Proporciona abstracciones y herramientas geoespaciales para sistemas de apoyo en defensa.",
+            "dTitle": "SIBA - Correos (2022-2023)",
+            "dText": "Desarrollo y despliegue de una arquitectura para la comunicación de buzones inteligentes en la Comunidad de Madrid, garantizando conectividad, gestión remota y fiabilidad operativa."
         },
         "projectsNote": "Más información en la sección Proyectos."
     }

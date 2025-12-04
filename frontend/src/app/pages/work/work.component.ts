@@ -13,6 +13,10 @@ interface Project {
   demoUrl?: string;
   internalRoute?: string;
   repoUrl?: string;
+
+  // NUEVO: para mostrar candado y explicar por qué no hay demo/código público
+  confidential?: boolean;
+  confidentialReason?: string;
 }
 
 @Component({
@@ -25,20 +29,8 @@ export class WorkComponent {
 
   constructor(private router: Router) { }
 
-
   projects: Project[] = [
-    {
-      id: 1,
-      title: 'Panel de Estadísticas',
-      shortDesc: 'Dashboard web para visualizar métricas en tiempo real.',
-      longDesc:
-        'Aplicación tipo dashboard que consume datos de una API REST para mostrar métricas, gráficos y tablas filtrables.',
-      techs: ['Angular', 'TypeScript', 'REST API'],
-      role: 'Desarrollo frontend completo',
-      year: '2024',
-      demoUrl: 'https://tu-demo-1.vercel.app',
-      repoUrl: 'https://github.com/tu-usuario/proyecto-dashboard',
-    },
+    // 🔹 Tus proyectos originales (NO modificados)
     {
       id: 2,
       title: 'Chat IA para reviews',
@@ -52,7 +44,7 @@ export class WorkComponent {
     },
     {
       id: 3,
-      title: 'Buscador de Películas',
+      title: 'Buscador de Películas (TESTING)',
       shortDesc: 'Frontend que consume una API pública de películas.',
       longDesc:
         'Aplicación que permite buscar películas, ver detalles básicos y practicar paginación y manejo de errores.',
@@ -69,6 +61,44 @@ export class WorkComponent {
       techs: ['Angular', 'Luciad', 'CSS', 'PrimeNG'],
       role: 'Ingeniero de desarrollo',
       year: '2025',
+    },
+
+
+    {
+      id: 5,
+      title: 'Detección de niveles de actividad física con IA',
+      shortDesc: 'Clasificación de niveles de actividad física a partir de datos de IMUs en pacientes.',
+      longDesc:
+        'Proyecto de investigación en el que se recopilaron datos mediante IMUs ad hoc colocadas en pacientes, se realizó el procesado y limpieza de las señales y se entrenaron modelos de Machine Learning para detectar distintos niveles de actividad física. Los modelos se utilizaron posteriormente en estudios de fisioterapia con pacientes reales.',
+      techs: ['Python', 'Machine Learning', 'Procesamiento de señales', 'Análisis de datos'],
+      role: 'Investigación, procesamiento de datos y desarrollo de modelos IA',
+      year: '2021',
+      confidential: true,
+      confidentialReason: 'Se trabaja con datos clínicos de pacientes en un contexto de investigación, por lo que la demo y el código no son públicos.'
+    },
+    {
+      id: 6,
+      title: 'Automatización de pruebas médicas con sensores y app móvil',
+      shortDesc: 'Plataforma para registrar pruebas médicas con dispositivos ad hoc y visualización web.',
+      longDesc:
+        'Trabajo en el que se automatizaron pruebas médicas mediante una app móvil conectada a dispositivos ADOC. Los datos se almacenaban en una base de datos central y se consultaban desde una aplicación web con gráficas, representaciones, historial de pruebas y gestión de roles de usuario.',
+      techs: ['Aplicación móvil', 'API REST', 'Base de datos', 'Frontend web'],
+      role: 'Desarrollo e integración end-to-end',
+      year: '2021',
+      confidential: true,
+      confidentialReason: 'La plataforma maneja información clínica sensible y no dispone de una demo pública.'
+    },
+    {
+      id: 7,
+      title: 'SIBA - Correos (2022-2023)',
+      shortDesc: 'Arquitectura para la comunicación de buzones inteligentes en la Comunidad de Madrid.',
+      longDesc:
+        'Development and deployment of an architecture for the communication of smart mailboxes in the Community of Madrid, integrando dispositivos IoT con la infraestructura central de Correos y asegurando la conectividad, monitorización y fiabilidad operativa.',
+      techs: ['Arquitectura distribuida', 'IoT', 'APIs', 'Mensajería'],
+      role: 'Desarrollo e integración de servicios',
+      year: '2022–2023',
+      confidential: true,
+      confidentialReason: 'La solución forma parte de la infraestructura interna de Correos y no cuenta con demo ni repositorio públicos.'
     },
   ];
 
@@ -93,5 +123,19 @@ export class WorkComponent {
     } else {
       alert('La demo aún no está disponible.');
     }
+  }
+
+  onDemoClick(project: Project) {
+    if (project.confidential) {
+      alert('Este proyecto es confidencial y su demo no es pública.');
+      return;
+    }
+
+    if (!project.internalRoute && !project.demoUrl) {
+      alert('La demo aún no está disponible.');
+      return;
+    }
+
+    this.openDemo(project);
   }
 }

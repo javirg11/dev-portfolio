@@ -8,15 +8,13 @@
     </p>
 
     <div class="contact-layout fade-in" style="animation-delay: .25s;">
-
-        <!-- Columna: información de contacto -->
         <div class="contact-info fade-in" style="animation-delay: .35s;">
             <h3 class="fade-slide" style="animation-delay: .4s;">Información de contacto</h3>
 
             <ul class="contact-list">
                 <li>
                     <span class="label">Email</span>
-                    <a href="javirg10@gmail.com">javirg10&#64;gmail.com</a>
+                    <a href="mailto:javirg10@gmail.com">javirg10&#64;gmail.com</a>
                 </li>
                 <li>
                     <span class="label">Ubicación</span>
@@ -43,36 +41,43 @@
             </p>
         </div>
 
-        <!-- Columna: formulario de contacto -->
         <div class="contact-form-card fade-in" style="animation-delay: .35s;">
             <h3 class="fade-slide" style="animation-delay: .4s;">Envíame un mensaje</h3>
 
-            <form class="contact-form" (submit)="$event.preventDefault()">
-
+            <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
                 <div class="form-row fade-in" style="animation-delay: .45s;">
                     <label for="name">Nombre</label>
-                    <input id="name" type="text" name="name" placeholder="Tu nombre" required />
+                    <input id="name" type="text" formControlName="name" placeholder="Tu nombre" required />
                 </div>
 
                 <div class="form-row fade-in" style="animation-delay: .5s;">
                     <label for="email">Email</label>
-                    <input id="email" type="email" name="email" placeholder="tu.email@ejemplo.com" required />
+                    <input id="email" type="email" formControlName="email" placeholder="tu.email@ejemplo.com"
+                        required />
                 </div>
 
                 <div class="form-row fade-in" style="animation-delay: .55s;">
                     <label for="subject">Asunto</label>
-                    <input id="subject" type="text" name="subject" placeholder="Motivo del mensaje" />
+                    <input id="subject" type="text" formControlName="subject" placeholder="Motivo del mensaje" />
                 </div>
 
                 <div class="form-row fade-in" style="animation-delay: .6s;">
                     <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" rows="5"
+                    <textarea id="message" formControlName="message" rows="5"
                         placeholder="Cuéntame brevemente en qué puedo ayudarte" required></textarea>
                 </div>
 
-                <button type="submit" class="btn-submit fade-in" style="animation-delay: .7s;">
-                    Enviar mensaje
+                <button type="submit" class="btn-submit fade-in" style="animation-delay: .7s;"
+                    [disabled]="contactForm.invalid || isSending">
+                    {{ isSending ? 'Enviando...' : 'Enviar mensaje' }}
                 </button>
+
+                <p class="feedback success" *ngIf="successMessage">
+                    {{ successMessage }}
+                </p>
+                <p class="feedback error" *ngIf="errorMessage">
+                    {{ errorMessage }}
+                </p>
             </form>
         </div>
     </div>
