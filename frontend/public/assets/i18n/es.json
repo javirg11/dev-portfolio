@@ -3,7 +3,7 @@
         "title": "Sobre mí",
         "hero": "¡Hola! Soy un apasionado de la tecnología con una base sólida en programación. Especialmente me interesa el desarrollo software, la inteligencia artificial y la gestión de datos, así como todo lo relativo a despliegues en la nube, integración de APIs y automatización mediante pipelines CI/CD.",
         "profileTitle": "Perfil profesional",
-        "profileText": "Me considero una persona orientada a mejorar y aprender las tecnologías más punteras. Disfruto mucho de proyectos en los que la arquitectura y la calidad del código son prioritarias. Tengo experiencia trabajando en entornos colaborativos y multidisciplinares, lo que me ha permitido desarrollar habilidades de comunicación y trabajo en equipo. He creado este portfolio para poder presentarme de manera más completa y para que sea un lugar donde puedo almacenar los proyectos que voy desarrollando en mi carrera y evitar así que se pierdan en el agujero negro de GitHub.",
+        "profileText": "Me considero una persona orientada a mejorar y aprender las tecnologías más punteras. Disfruto mucho de proyectos en los que la arquitectura y la calidad del código son prioritarias. Tengo experiencia trabajando en entornos colaborativos y multidisciplinares, lo que me ha permitido desarrollar habilidades de comunicación y trabajo en equipo. <br>He creado este portfolio para poder presentarme de manera más completa y para que sea un lugar donde puedo almacenar los proyectos que voy desarrollando en mi carrera y evitar así que se pierdan en el agujero negro de GitHub.",
         "areasTitle": "Áreas que me apasionan",
         "areas": {
             "webTitle": "Desarrollo Web",

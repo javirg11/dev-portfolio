@@ -1,23 +1,76 @@
-<div class="sentiment-chat">
+<div class="sentiment-card">
+  <header class="sentiment-header">
     <h2>Sentiment Chat</h2>
     <p class="subtitle">
-        Type a short review and I will analyze its sentiment using a Machine Learning model I trained with Python.
+      Type a short review and I’ll analyze its sentiment using a Machine Learning model
+      I trained in Python.
+    </p>
+  </header>
+
+  <section class="sentiment-body">
+    <label for="review-text" class="field-label">
+      Your review
+      <span class="field-hint">Short, natural-language text works best.</span>
+    </label>
+
+    <textarea
+      id="review-text"
+      [(ngModel)]="userText"
+      rows="4"
+      class="review-input"
+      placeholder="Write your review here..."
+    ></textarea>
+
+    <div class="actions-row">
+      <button
+        type="button"
+        class="primary-button"
+        (click)="analyze()"
+        [disabled]="loading || !userText?.trim()"
+      >
+        <span *ngIf="!loading">Analyze sentiment</span>
+        <span *ngIf="loading">Analyzing…</span>
+      </button>
+
+      <p class="secondary-text">
+        This demo calls a real Python backend with a custom ML model.
+      </p>
+    </div>
+
+    <!-- Mensaje mientras analiza / levanta el servidor -->
+    <p class="info-banner" *ngIf="loading">
+      ⏳ Warming up the server…  
+      <br />
+      The first request may take <strong>50 seconds or more</strong> while the model loads.
     </p>
 
-    <textarea [(ngModel)]="userText" rows="4" placeholder="Write your review here..."></textarea>
+    <p class="error-message" *ngIf="error">
+      ⚠️ {{ error }}
+    </p>
 
-    <button (click)="analyze()" [disabled]="loading">
-        {{ loading ? 'Analyzing...' : 'Analyze sentiment' }}
-    </button>
+    <section class="result-card" *ngIf="lastResponse as response">
+      <h3>Result</h3>
 
-    <p class="error" *ngIf="error">{{ error }}</p>
+      <div class="result-row">
+        <span class="result-label">Sentiment</span>
+        <span class="result-value sentiment-pill sentiment-{{ response.sentiment | lowercase }}">
+          {{ response.sentiment }}
+        </span>
+      </div>
 
-    <div class="result" *ngIf="lastResponse as response">
-        <h3>Result</h3>
-        <p><strong>Sentiment:</strong> {{ lastResponse.sentiment }}</p>
-        <p><strong>Confidence:</strong> {{ lastResponse.confidence | number:'1.2-2' }}</p>
-        <p *ngIf="lastResponse.explanation">
-            <strong>Explanation:</strong> {{ lastResponse.explanation }}
+      <div class="result-row">
+        <span class="result-label">Confidence</span>
+        <span class="result-value">
+          {{ response.confidence | number:'1.2-2' }}
+        </span>
+      </div>
+
+      <div class="result-explanation" *ngIf="response.explanation">
+        <span class="result-label">Explanation</span>
+        <p class="result-text">
+          {{ response.explanation }}
         </p>
-    </div>
+      </div>
+    </section>
+  </section>
 </div>

@@ -10,9 +10,8 @@
     <!-- Sección: Perfil profesional -->
     <div class="profile-section card fade-in">
         <h2>{{ 'about.profileTitle' | translate }}</h2>
-        <p>
-            {{ 'about.profileText' | translate }}
-        </p>
+        <p [innerHTML]="'about.profileText' | translate"></p>
+
     </div>
 
     <!-- Intereses técnicos -->
