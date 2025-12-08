@@ -30,6 +30,6 @@ export class FirstScreenComponent implements OnInit {
     this.showQuestion = false;
 
     await this.analytics.registerVisit(type);
-    this.router.navigate(['/work']);
+    this.router.navigate(['/about']);
   }
 }

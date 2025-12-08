@@ -1,111 +1,111 @@
 <section class="projects-container fade-in">
     <h2 class="fade-slide">Mis Proyectos</h2>
+</section>
 
-    <p class="projects-intro fade-in" style="animation-delay: .15s;">
-        Una selección de proyectos personales y profesionales con los que he trabajado distintas
-        tecnologías y enfoques de desarrollo. Algunos proyectos manejan información sensible y
-        aparecen marcados con <span class="inline-lock">🔒</span>, por lo que no disponen de demo pública.
-    </p>
+<p class="projects-intro fade-in" style="animation-delay: .15s;">
+    Una selección de proyectos personales y profesionales con los que he trabajado distintas
+    tecnologías y enfoques de desarrollo. Algunos proyectos manejan información sensible y
+    aparecen marcados con <span class="inline-lock">🔒</span>, por lo que no disponen de demo pública.
+</p>
 
-    <div class="projects-grid fade-in" style="animation-delay: .25s;">
-        <article class="project-card fade-in" *ngFor="let project of projects; let i = index"
-            [style.animation-delay]="(0.3 + i * 0.05) + 's'">
-            <div class="project-header">
-                <h3 class="fade-slide" style="animation-delay: .35s;">
-                    {{ project.title }}
-                </h3>
+<div class="projects-grid fade-in" style="animation-delay: .25s;">
+    <article class="project-card fade-in" *ngFor="let project of projects; let i = index"
+        [style.animation-delay]="(0.3 + i * 0.05) + 's'">
+        <div class="project-header">
+            <h3 class="fade-slide" style="animation-delay: .35s;">
+                {{ project.title }}
+            </h3>
 
-                <div class="project-meta">
-                    <span class="project-year">{{ project.year }}</span>
+            <div class="project-meta">
+                <span class="project-year">{{ project.year }}</span>
 
-                    <span *ngIf="project.confidential" class="project-confidential"
-                        title="Proyecto confidencial. La demo y el código no son públicos.">
-                        🔒
-                    </span>
-                </div>
+                <span *ngIf="project.confidential" class="project-confidential"
+                    title="Proyecto confidencial. La demo y el código no son públicos.">
+                    🔒
+                </span>
             </div>
+        </div>
 
-            <p class="project-short">
-                {{ project.shortDesc }}
-            </p>
+        <p class="project-short">
+            {{ project.shortDesc }}
+        </p>
 
-            <div class="project-techs">
-                <span class="tech-pill" *ngFor="let tech of project.techs">
+        <div class="project-techs">
+            <span class="tech-pill" *ngFor="let tech of project.techs">
+                {{ tech }}
+            </span>
+        </div>
+
+        <div class="buttons">
+            <button class="btn info" (click)="openInfo(project)">Info</button>
+            <button class="btn demo"
+                [class.disabled]="project.confidential || (!project.demoUrl && !project.internalRoute)"
+                [disabled]="project.confidential || (!project.demoUrl && !project.internalRoute)"
+                (click)="onDemoClick(project)">
+                {{ project.confidential ? 'Demo privada' : 'Probar' }}
+            </button>
+        </div>
+    </article>
+</div>
+
+<!-- Overlay + panel lateral -->
+<div class="project-info-overlay" *ngIf="selectedProject as p">
+    <!-- Fondo oscuro -->
+    <div class="overlay-backdrop" (click)="closeInfo()"></div>
+
+    <!-- Panel lateral -->
+    <aside class="info-panel">
+        <button class="close-btn" (click)="closeInfo()" aria-label="Cerrar">
+            ✕
+        </button>
+
+        <header class="info-header">
+            <h3 class="fade-slide">{{ p.title }}</h3>
+            <span class="info-year">{{ p.year }}</span>
+        </header>
+
+        <p class="info-role">
+            <strong>Rol:</strong> {{ p.role }}
+        </p>
+
+        <p class="info-confidential" *ngIf="p.confidential">
+            🔒
+            <strong>Proyecto confidencial:</strong>
+            {{ p.confidentialReason || 'Por tratarse de datos sensibles o información protegida, la demo y el código
+            no son públicos.' }}
+        </p>
+
+        <p class="info-long">
+            {{ p.longDesc }}
+        </p>
+
+        <div class="info-section" style="animation-delay: .25s;">
+            <h4>Tecnologías utilizadas</h4>
+            <div class="info-techs">
+                <span class="tech-pill" *ngFor="let tech of p.techs">
                     {{ tech }}
                 </span>
             </div>
+        </div>
 
-            <div class="buttons">
-                <button class="btn info" (click)="openInfo(project)">Info</button>
-                <button class="btn demo"
-                    [class.disabled]="project.confidential || (!project.demoUrl && !project.internalRoute)"
-                    [disabled]="project.confidential || (!project.demoUrl && !project.internalRoute)"
-                    (click)="onDemoClick(project)">
-                    {{ project.confidential ? 'Demo privada' : 'Probar' }}
-                </button>
+        <div class="info-links" *ngIf="!p.confidential && (p.demoUrl || p.repoUrl || p.internalRoute)"
+            style="animation-delay: .3s;">
+            <h4>Enlaces</h4>
+            <div class="info-links-buttons">
+                <a *ngIf="p.internalRoute" [routerLink]="p.internalRoute" class="link-btn primary">
+                    Ver demo
+                </a>
+
+                <a *ngIf="!p.internalRoute && p.demoUrl" [href]="p.demoUrl" target="_blank" rel="noopener noreferrer"
+                    class="link-btn primary">
+                    Ver demo
+                </a>
+
+                <a *ngIf="p.repoUrl" [href]="p.repoUrl" target="_blank" rel="noopener noreferrer"
+                    class="link-btn secondary">
+                    Ver código
+                </a>
             </div>
-        </article>
-    </div>
-
-    <!-- Overlay + panel lateral -->
-    <div class="project-info-overlay" *ngIf="selectedProject as p">
-        <!-- Fondo oscuro -->
-        <div class="overlay-backdrop" (click)="closeInfo()"></div>
-
-        <!-- Panel lateral -->
-        <aside class="info-panel">
-            <button class="close-btn" (click)="closeInfo()" aria-label="Cerrar">
-                ✕
-            </button>
-
-            <header class="info-header">
-                <h3 class="fade-slide">{{ p.title }}</h3>
-                <span class="info-year">{{ p.year }}</span>
-            </header>
-
-            <p class="info-role">
-                <strong>Rol:</strong> {{ p.role }}
-            </p>
-
-            <p class="info-confidential" *ngIf="p.confidential">
-                🔒
-                <strong>Proyecto confidencial:</strong>
-                {{ p.confidentialReason || 'Por tratarse de datos sensibles o información protegida, la demo y el código
-                no son públicos.' }}
-            </p>
-
-            <p class="info-long">
-                {{ p.longDesc }}
-            </p>
-
-            <div class="info-section" style="animation-delay: .25s;">
-                <h4>Tecnologías utilizadas</h4>
-                <div class="info-techs">
-                    <span class="tech-pill" *ngFor="let tech of p.techs">
-                        {{ tech }}
-                    </span>
-                </div>
-            </div>
-
-            <div class="info-links" *ngIf="!p.confidential && (p.demoUrl || p.repoUrl || p.internalRoute)"
-                style="animation-delay: .3s;">
-                <h4>Enlaces</h4>
-                <div class="info-links-buttons">
-                    <a *ngIf="p.internalRoute" [routerLink]="p.internalRoute" class="link-btn primary">
-                        Ver demo
-                    </a>
-
-                    <a *ngIf="!p.internalRoute && p.demoUrl" [href]="p.demoUrl" target="_blank"
-                        rel="noopener noreferrer" class="link-btn primary">
-                        Ver demo
-                    </a>
-
-                    <a *ngIf="p.repoUrl" [href]="p.repoUrl" target="_blank" rel="noopener noreferrer"
-                        class="link-btn secondary">
-                        Ver código
-                    </a>
-                </div>
-            </div>
-        </aside>
-    </div>
-</section>
+        </div>
+    </aside>
+</div>

@@ -34,12 +34,12 @@ export class WorkComponent {
     {
       id: 2,
       title: 'Chat IA para reviews',
-      shortDesc: 'App CRUD sencilla para gestionar tareas diarias.',
+      shortDesc: 'Chat que devuelve un sentimiento positivo/negativo a una review.',
       longDesc:
-        'Proyecto para practicar formularios reactivos, validaciones y manejo de estado en el cliente.',
-      techs: ['Angular', 'Reactive Forms'],
-      role: 'Diseño y desarrollo de la interfaz',
-      year: '2023',
+        'Proyecto en el que se entrena un modelo de ML con una base de datos de 15.000 reviews de películas. Se entrena para poder reconocer un sentimiento positivo/negativo con un nivel de confianza. El backend se despliegua en la nube utilizando la versión gratuita de Render.',
+      techs: ['Python', 'ML', 'BBDD', 'Cloud'],
+      role: 'Diseño y desarrollo del modelo ML, del despliegue y de la interfaz',
+      year: '2025',
       internalRoute: '/projects/sentiment-chat',
     },
     {
@@ -50,7 +50,7 @@ export class WorkComponent {
         'Aplicación que permite buscar películas, ver detalles básicos y practicar paginación y manejo de errores.',
       techs: ['Angular', 'HTTP Client'],
       role: 'Implementación de lógica de búsqueda y UI',
-      year: '2023',
+      year: '2025',
     },
     {
       id: 4,
@@ -60,7 +60,7 @@ export class WorkComponent {
         'Proyecto desarrollado para INDRA en el que se desarrolla un modelo GIS utilizando el motor LuciadRIA. Se trabaja con capa de abstracción y con configuración para que el proyecto sea común a toda la empresa y evitar acoplamientos',
       techs: ['Angular', 'Luciad', 'CSS', 'PrimeNG'],
       role: 'Ingeniero de desarrollo',
-      year: '2025',
+      year: '2024-2025',
     },
 
 
@@ -72,7 +72,7 @@ export class WorkComponent {
         'Proyecto de investigación en el que se recopilaron datos mediante IMUs ad hoc colocadas en pacientes, se realizó el procesado y limpieza de las señales y se entrenaron modelos de Machine Learning para detectar distintos niveles de actividad física. Los modelos se utilizaron posteriormente en estudios de fisioterapia con pacientes reales.',
       techs: ['Python', 'Machine Learning', 'Procesamiento de señales', 'Análisis de datos'],
       role: 'Investigación, procesamiento de datos y desarrollo de modelos IA',
-      year: '2021',
+      year: '2024',
       confidential: true,
       confidentialReason: 'Se trabaja con datos clínicos de pacientes en un contexto de investigación, por lo que la demo y el código no son públicos.'
     },
@@ -84,7 +84,7 @@ export class WorkComponent {
         'Trabajo en el que se automatizaron pruebas médicas mediante una app móvil conectada a dispositivos ADOC. Los datos se almacenaban en una base de datos central y se consultaban desde una aplicación web con gráficas, representaciones, historial de pruebas y gestión de roles de usuario.',
       techs: ['Aplicación móvil', 'API REST', 'Base de datos', 'Frontend web'],
       role: 'Desarrollo e integración end-to-end',
-      year: '2021',
+      year: '2024',
       confidential: true,
       confidentialReason: 'La plataforma maneja información clínica sensible y no dispone de una demo pública.'
     },
