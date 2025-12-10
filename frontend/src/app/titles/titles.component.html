@@ -1,1 +1,30 @@
-<p>titles works!</p>
+<section class="titulos-container fade-in">
+  <h2 class="fade-slide">Títulos Oficiales</h2>
+
+  <p class="intro">
+    Aquí muestro algunos títulos oficiales relevantes.  
+    Los datos personales han sido ocultados por privacidad.
+  </p>
+
+  <div class="grid">
+    <article 
+      class="titulo-card fade-in" 
+      *ngFor="let t of titulos; let i = index"
+      [style.animation-delay]="(0.2 + i * 0.1) + 's'"
+      (click)="abrirImagen(t.imagen)"
+    >
+      <img [src]="t.imagen" [alt]="t.nombre" class="thumb">
+      <h3>{{ t.nombre }}</h3>
+    </article>
+  </div>
+
+  <!-- Modal con imagen grande -->
+  <div class="modal-overlay" *ngIf="imagenSeleccionada">
+    <div class="modal-backdrop" (click)="cerrarImagen()"></div>
+
+    <div class="modal">
+      <button class="close-btn" (click)="cerrarImagen()">✕</button>
+      <img [src]="imagenSeleccionada" class="modal-img">
+    </div>
+  </div>
+</section>
