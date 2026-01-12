@@ -1,8 +1,16 @@
 export const environment = {
     production: true,
-    supabaseUrl: 'https://tjerlrgstemrqpjgpcnn.supabase.co',
-    supabaseAnonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqZXJscmdzdGVtcnFwamdwY25uIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQxODA0NDgsImV4cCI6MjA3OTc1NjQ0OH0.ZaHWCe6TP3zz1lvQW0R3Q2aOtJRNEiwWLeQKXxYYwEs',
 
     apiBaseUrl: 'https://dev-portfolio-xqky.onrender.com',
+
+    firebase: {
+        apiKey: "AIzaSyD5AIPfKfvhHO2UB5EhDKMUA7VXZEsdj1g",
+        authDomain: "porfolio-fjavierredondo.firebaseapp.com",
+        projectId: "porfolio-fjavierredondo",
+        storageBucket: "porfolio-fjavierredondo.firebasestorage.app",
+        messagingSenderId: "364642791284",
+        appId: "1:364642791284:web:5fd5648d68247d1ff0c621",
+        measurementId: "G-BT9G8FWTRB"
+    },
 
 };

@@ -19,3 +19,4 @@ backends/**/data/processed/*
 
 # Jupyter
 backends/**/notebooks/.ipynb_checkpoints/
+node_modules

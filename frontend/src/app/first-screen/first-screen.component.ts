@@ -20,6 +20,8 @@ export class FirstScreenComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    localStorage.removeItem('visitorType');
+
     console.log('FirstScreenComponent ngOnInit'); // 👈 para ver si se inicializa
     const alreadyAnswered = localStorage.getItem('visitorType');
     this.showQuestion = !alreadyAnswered;
