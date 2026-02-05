@@ -6,14 +6,18 @@
         "profileText": "I consider myself curious, consistent and eager to learn. I enjoy working on projects where I can combine development, automation, cloud deployments and CI/CD best practices.",
         "areasTitle": "Areas that I’m passionate about",
         "areas": {
-            "webTitle": "Web Development",
+            "webTitle": "Software Development",
             "webText": "Building modern applications with Angular, TypeScript and REST APIs.",
+            "GisTitle": "Geospatial Models",
+            "GisText": "Development of web GIS libraries, integration of geospatial models and visualization of geographic data.",
+            "backendTitle": "Backend & APIs",
+            "backendText": "Design and development of backend services, REST APIs, business logic and connection with databases.",
             "aiTitle": "Artificial Intelligence",
             "aiText": "Lightweight models, classification, embeddings and automation with AI.",
             "dataTitle": "Data",
             "dataText": "Extraction, analysis and visualisation to obtain real value.",
             "cloudTitle": "Cloud & DevOps",
-            "cloudText": "Cloud deployments, CI/CD, containers and automation with pipelines."
+            "cloudText": "Cloud deployments, CI/CD, containers and automation with pipelines.",
         },
         "experienceTitle": "Experience",
         "exp": {

@@ -48,7 +48,7 @@ export class WorkComponent {
       shortDesc: 'Frontend que consume una API pública de películas.',
       longDesc:
         'Aplicación que permite buscar películas, ver detalles básicos y practicar paginación y manejo de errores.',
-      techs: ['Angular', 'HTTP Client'],
+      techs: ['JavaScript', 'HTTP Client'],
       role: 'Implementación de lógica de búsqueda y UI',
       year: '2025',
     },
@@ -58,7 +58,7 @@ export class WorkComponent {
       shortDesc: 'Desarrollo de un GIS.',
       longDesc:
         'Proyecto desarrollado para INDRA en el que se desarrolla un modelo GIS utilizando el motor LuciadRIA. Se trabaja con capa de abstracción y con configuración para que el proyecto sea común a toda la empresa y evitar acoplamientos',
-      techs: ['Angular', 'Luciad', 'CSS', 'PrimeNG'],
+      techs: ['JavaScript', 'Luciad', 'CSS', 'PrimeNG'],
       role: 'Ingeniero de desarrollo',
       year: '2024-2025',
     },
@@ -90,11 +90,11 @@ export class WorkComponent {
     },
     {
       id: 7,
-      title: 'SIBA - Correos (2022-2023)',
-      shortDesc: 'Arquitectura para la comunicación de buzones inteligentes en la Comunidad de Madrid.',
+      title: 'SIBA - Correos',
+      shortDesc: 'Arquitectura para la comunicación de buzones inteligentes en la Comunidad de Madrid con despliegue en AWS.',
       longDesc:
         'Development and deployment of an architecture for the communication of smart mailboxes in the Community of Madrid, integrando dispositivos IoT con la infraestructura central de Correos y asegurando la conectividad, monitorización y fiabilidad operativa.',
-      techs: ['Arquitectura distribuida', 'IoT', 'APIs', 'Mensajería'],
+      techs: ['Arquitectura distribuida', 'AWS', 'IoT', 'APIs', 'Mensajería'],
       role: 'Desarrollo e integración de servicios',
       year: '2022–2023',
       confidential: true,

@@ -10,24 +10,14 @@
   <section class="sentiment-body">
     <label for="review-text" class="field-label">
       Your review
-      <span class="field-hint">Short, natural-language text works best.</span>
+      <span class="field-hint">Short, english, natural-language text works best.</span>
     </label>
 
-    <textarea
-      id="review-text"
-      [(ngModel)]="userText"
-      rows="4"
-      class="review-input"
-      placeholder="Write your review here..."
-    ></textarea>
+    <textarea id="review-text" [(ngModel)]="userText" rows="4" class="review-input"
+      placeholder="Write your review here..."></textarea>
 
     <div class="actions-row">
-      <button
-        type="button"
-        class="primary-button"
-        (click)="analyze()"
-        [disabled]="loading || !userText?.trim()"
-      >
+      <button type="button" class="primary-button" (click)="analyze()" [disabled]="loading || !userText?.trim()">
         <span *ngIf="!loading">Analyze sentiment</span>
         <span *ngIf="loading">Analyzing…</span>
       </button>
@@ -39,7 +29,7 @@
 
     <!-- Mensaje mientras analiza / levanta el servidor -->
     <p class="info-banner" *ngIf="loading">
-      ⏳ Warming up the server…  
+      ⏳ Warming up the server…
       <br />
       The first request may take <strong>50 seconds or more</strong> while the model loads.
     </p>

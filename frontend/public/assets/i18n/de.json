@@ -13,7 +13,11 @@
             "dataTitle": "Daten",
             "dataText": "Extraktion, Analyse und Visualisierung, um echten Mehrwert zu schaffen.",
             "cloudTitle": "Cloud & DevOps",
-            "cloudText": "Cloud-Deployments, CI/CD, Container und automatisierte Pipelines."
+            "cloudText": "Cloud-Deployments, CI/CD, Container und automatisierte Pipelines.",
+            "GisTitle": "Geospatial Models",
+            "GisText": "Entwicklung von Web-GIS-Bibliotheken, Integration von geospatialen Modellen und Visualisierung geografischer Daten.",
+            "backendTitle": "Backend & APIs",
+            "backendText": "Design und Entwicklung von Backend-Services, REST-APIs, Geschäftslogik und Verbindung mit Datenbanken."
         },
         "experienceTitle": "Berufserfahrung",
         "exp": {
