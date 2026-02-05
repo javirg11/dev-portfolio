@@ -121,7 +121,14 @@ export class WorkComponent {
 
   onDemoClick(project: Project) {
     if (project.id === 2) {
-      this.sentimentService.analyze('Test')
+      this.sentimentService.analyze('Test').subscribe({
+        next: (res) => {
+          console.log('Loading model...');
+        },
+        error: (err) => {
+          console.error('Error contacting sentiment API:');
+        }
+      });
     }
     if (project.confidential) {
       alert(this.translate.instant('work.alerts.confidential'));
