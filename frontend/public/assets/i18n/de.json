@@ -1,45 +1,131 @@
 {
     "about": {
         "title": "Über mich",
-        "hero": "Ich bin technologiebegeistert und interessiere mich besonders für Webentwicklung, künstliche Intelligenz, Datenanalyse und Cloud-Architektur. Es motiviert mich, nützliche, skalierbare und elegante Lösungen zu erstellen.",
+        "hero": "Hallo! Ich bin Javier, ein Technikbegeisterter mit einer soliden Grundlage in der Programmierung. Besonders interessieren mich Softwareentwicklung, künstliche Intelligenz und Datenmanagement sowie alles rund um Cloud-Deployments, API-Integration und Automatisierung mit CI/CD-Pipelines.",
         "profileTitle": "Berufliches Profil",
-        "profileText": "Ich sehe mich als neugierige, beständige und lernorientierte Person. Ich arbeite gerne an Projekten, in denen ich Entwicklung, Automatisierung, Cloud-Deployments und CI/CD Best Practices kombinieren kann.",
-        "areasTitle": "Bereiche, die mich begeistern",
+        "profileText": "Ich betrachte mich als eine Person, die auf kontinuierliche Verbesserung und das Erlernen modernster Technologien ausgerichtet ist. Ich arbeite besonders gern an Projekten, bei denen Architektur und Codequalität im Vordergrund stehen. Ich habe Erfahrung in kollaborativen und multidisziplinären Umgebungen, wodurch ich meine Kommunikations- und Teamfähigkeiten weiterentwickeln konnte. <br>Ich habe dieses Portfolio erstellt, um mich umfassender vorzustellen und einen Ort zu haben, an dem ich die Projekte meiner beruflichen Laufbahn sammle, damit sie nicht im GitHub-Nirwana verloren gehen.",
+        "areasTitle": "Interessensgebiete",
         "areas": {
-            "webTitle": "Webentwicklung",
-            "webText": "Erstellung moderner Anwendungen mit Angular, TypeScript und REST-APIs.",
+            "webTitle": "Softwareentwicklung",
+            "webText": "Entwicklung moderner Anwendungen mit Angular, TypeScript und REST-APIs.",
             "aiTitle": "Künstliche Intelligenz",
-            "aiText": "Leichte Modelle, Klassifikation, Embeddings und Automatisierung mit KI.",
+            "aiText": "Leichtgewichtige Modelle, Klassifikation, Embeddings und KI-gestützte Automatisierung.",
             "dataTitle": "Daten",
-            "dataText": "Extraktion, Analyse und Visualisierung, um echten Mehrwert zu schaffen.",
+            "dataText": "Extraktion, Analyse und Visualisierung zur Gewinnung von echtem Mehrwert.",
             "cloudTitle": "Cloud & DevOps",
-            "cloudText": "Cloud-Deployments, CI/CD, Container und automatisierte Pipelines.",
-            "GisTitle": "Geospatial Models",
-            "GisText": "Entwicklung von Web-GIS-Bibliotheken, Integration von geospatialen Modellen und Visualisierung geografischer Daten.",
+            "cloudText": "Cloud-Deployments, CI/CD, Container und Pipeline-Automatisierung.",
+            "GisTitle": "Geospatiale Modelle",
+            "GisText": "Entwicklung von Web-GIS-Bibliotheken, Integration geospatialer Modelle und Visualisierung geografischer Daten.",
             "backendTitle": "Backend & APIs",
-            "backendText": "Design und Entwicklung von Backend-Services, REST-APIs, Geschäftslogik und Verbindung mit Datenbanken."
+            "backendText": "Entwurf und Entwicklung von Backend-Services, REST-APIs, Geschäftslogik und Datenbankanbindung."
         },
-        "experienceTitle": "Berufserfahrung",
+        "experienceTitle": "Erfahrung",
         "exp": {
             "uahDate": "2020 — 2023",
-            "uahRole": "Wissenschaftliche Hilfskraft",
-            "uahCompany": "Universidad de Alcalá",
-            "uahDesc": "Angewandte Forschung zu neuen Technologien, Prototyping interner Tools, Datenmanagement und Entwicklung kleiner Softwaremodule für experimentelle Studien. Zusammenarbeit mit Forschungsgruppen.",
+            "uahRole": "Wissenschaftlicher Mitarbeiter",
+            "uahCompany": "Universität Alcalá",
+            "uahDesc": "Angewandte Forschung in aufkommenden Technologien, Prototyping interner Werkzeuge, Datenmanagement und Entwicklung kleiner Softwaremodule für experimentelle Studien. Zusammenarbeit mit Forschungsgruppen.",
             "indraDate": "2024 — Heute",
-            "indraRole": "Entwickler / Technischer Berater",
+            "indraRole": "Softwareentwicklungsingenieur",
             "indraCompany": "Indra",
-            "indraDesc": "Entwicklung interner Lösungen, Wartung von Anwendungen, API-Integration, CI/CD-Pipelines und Unterstützung bei Deployments. Mitarbeit in realen Kundenprojekten mit komplexen Infrastrukturen."
+            "indraDesc": "Entwicklung interner Lösungen, Wartung von Anwendungen, API-Integration, CI/CD-Pipelines und Unterstützung bei Deployments. Mitarbeit an realen Projekten mit Kunden und komplexen Infrastrukturen."
         },
         "projectsTitle": "Ausgewählte Projekte",
-        "projectsIntro": "Hier kannst du eine kurze Beschreibung einiger relevanter Projekte hinzufügen:",
+        "projectsIntro": "Einige der Projekte, an denen ich besonders gerne gearbeitet habe:",
         "projects": {
-            "aTitle": "Projekt A",
-            "aText": "Webanwendung zur Echtzeit-Datenanalyse mit Dashboard, Filtern und API-Nutzung. (Beispielbeschreibung)",
-            "bTitle": "Projekt B",
-            "bText": "System zur Deployment-Automatisierung mit CI/CD, Docker und GitHub Actions. (Beispielbeschreibung)",
-            "cTitle": "Projekt C",
-            "cText": "Experimentelle Anwendung mit KI zur Textklassifizierung. (Beispielbeschreibung)"
+            "aTitle": "Erkennung von körperlichen Aktivitätsniveaus mit KI",
+            "aText": "Forschungsprojekt, das Daten über maßgeschneiderte IMUs erfasst, verarbeitet und ML-Modelle trainiert, um Aktivitätsniveaus bei Patienten zu erkennen. Die Modelle wurden später in realen physiotherapeutischen Studien validiert. Veröffentlichter Artikel: https://ieeexplore.ieee.org/abstract/document/9856513",
+            "bTitle": "Automatisierung medizinischer Tests mit Sensoren und mobiler App",
+            "bText": "Entwicklung einer mobilen App, die mit medizinischen Sensoren verbunden ist, um klinische Tests aufzuzeichnen und die Daten in einer zentralen Datenbank zu speichern. Integration mit einer Webplattform mit Diagrammen, Historien und Benutzerrollen.",
+            "cTitle": "Web-GIS-Bibliothek für Verteidigungsanwendungen",
+            "cText": "Implementierung einer Web-GIS-Bibliothek mit entkoppelter Architektur zur Wiederverwendung in mehreren Projekten. Bietet geospatiale Abstraktionen und Werkzeuge für Unterstützungssysteme im Verteidigungsbereich.",
+            "dTitle": "SIBA - Correos (2022-2023)",
+            "dText": "Entwicklung und Bereitstellung einer Architektur zur Kommunikation mit intelligenten Briefkästen in der Autonomen Gemeinschaft Madrid, die Konnektivität, Fernverwaltung und Betriebssicherheit gewährleistet."
         },
-        "projectsNote": "Mehr Informationen im Bereich Projekte."
+        "projectsNote": "Weitere Informationen im Bereich Projekte."
+    },
+    "formation": {
+        "title": "Ausbildung",
+        "intro": "Dies ist ein Überblick über meinen akademischen Werdegang sowie über ergänzende Weiterbildungen im Bereich Informatik und Telekommunikation.",
+        "formalTitle": "Formale Ausbildung",
+        "degree": {
+            "date": "2020 — 2024",
+            "title": "Bachelor in Informationssystemtechnik",
+            "center": "Universität Alcalá",
+            "location": "Alcalá de Henares, Madrid",
+            "desc": "Ausbildung mit Schwerpunkt auf Entwurf, Entwicklung und Verwaltung von Informationssystemen unter Kombination von Softwaretechnik, Unternehmensarchitekturen und IT-Projektmanagement.",
+            "d1": "Spezialisierung auf Softwarearchitektur und verteilte Systeme.",
+            "d2": "Mitarbeit an Teamprojekten in Web- und Backend-Entwicklung.",
+            "d3": "Bachelorarbeit in Zusammenarbeit mit der Forschungsgruppe GEINTRA."
+        },
+        "cfgs": {
+            "date": "2018 — 2020",
+            "title": "Höhere Berufsausbildung in Telekommunikation und Informatik",
+            "center": "Institut Antonio Machado",
+            "location": "Alcalá de Henares, Madrid",
+            "desc": "Programm mit Schwerpunkt auf Systemadministration, Netzwerken, Kommunikation und Programmiergrundlagen mit stark praxisorientiertem Ansatz.",
+            "d1": "Administration von Betriebssystemen und lokalen Netzwerken.",
+            "d2": "Erster Kontakt mit Programmierung und Entwicklungsumgebungen.",
+            "d3": "Betriebspraktikum im Bereich technischer Support und Infrastruktur."
+        },
+        "certText": "Sie können eine Kopie meiner offiziellen Abschlüsse (mit ausgeblendeten sensiblen personenbezogenen Daten) über den folgenden Link einsehen:",
+        "certBtn": "Offizielle Abschlüsse anzeigen (PDF)",
+        "coursesTitle": "Kurse und Zertifizierungen",
+        "courses": {
+            "ccna": {
+                "title": "CCNA-Zertifizierung – Netzwerkgrundlagen",
+                "meta": "CISCO Zertifizierungsanbieter · 2020",
+                "desc": "Netzwerkkonzepte, OSI/TCP-IP-Modelle, Adressierung, Switching und grundlegendes Routing für Unternehmensumgebungen."
+            },
+            "erasmus": {
+                "title": "Erasmus-Programm – Cybersicherheit und Cloud Computing (Master-Niveau)",
+                "meta": "FH JOANNEUM University of Applied Sciences · Österreich · 2023",
+                "desc": "Präsenzstudium in Österreich mit Schwerpunkt Cybersicherheit und Cloud Computing im Rahmen eines internationalen Programms."
+            },
+            "angular": {
+                "title": "Kurs Webentwicklung mit Angular",
+                "meta": "INDRA · 2025",
+                "desc": "Entwicklung von SPA-Anwendungen mit Angular, Nutzung von REST-APIs, erweitertes Routing und bewährte Methoden der Projektorganisation."
+            },
+            "gis": {
+                "title": "Luciad-Kurs zur Entwicklung von GIS-Modellen",
+                "meta": "INDRA · 2025",
+                "desc": "Visualisierung geospatialer Daten mit Luciad, Integration von GIS-Modellen in Webanwendungen und Performance-Optimierung."
+            },
+            "git": {
+                "title": "Git- und Versionskontrollkurs",
+                "meta": "Universität Alcalá · 2021",
+                "desc": "Kollaboratives Arbeiten mit Git, Branches, Pull-Request-Workflows und Best Practices für Teamprojekte."
+            },
+            "aws": {
+                "title": "AWS Certified Solutions Architect – Associate (In Bearbeitung)",
+                "meta": "Amazon Web Services · 2021",
+                "desc": "Grundlagen der Cloud-Architektur, Entwurf skalierbarer Lösungen, Sicherheit und Kostenoptimierung auf AWS."
+            }
+        }
+    },
+    "contact": {
+        "title": "Kontakt",
+        "intro": "Wenn Sie mit mir über Möglichkeiten sprechen, an einem Projekt zusammenarbeiten oder einfach eine Anfrage stellen möchten, können Sie das Formular oder eine der untenstehenden Kontaktmöglichkeiten nutzen.",
+        "infoTitle": "Kontaktinformationen",
+        "labels": {
+            "email": "E-Mail",
+            "linkedin": "LinkedIn",
+            "github": "GitHub"
+        },
+        "note": "Ich versuche, so schnell wie möglich auf alle Nachrichten zu reagieren, die sich auf Entwicklung, Ausbildung und Technologieprojekte beziehen.",
+        "formTitle": "Senden Sie mir eine Nachricht",
+        "form": {
+            "nameLabel": "Name",
+            "namePlaceholder": "Ihr Name",
+            "emailLabel": "E-Mail",
+            "emailPlaceholder": "ihre.email@beispiel.de",
+            "subjectLabel": "Betreff",
+            "subjectPlaceholder": "Grund Ihrer Nachricht",
+            "messageLabel": "Nachricht",
+            "messagePlaceholder": "Beschreiben Sie kurz, wobei ich Ihnen helfen kann",
+            "submit": "Nachricht senden",
+            "sending": "Wird gesendet..."
+        }
     }
 }

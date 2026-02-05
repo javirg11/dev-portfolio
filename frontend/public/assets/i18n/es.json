@@ -43,5 +43,89 @@
             "dText": "Desarrollo y despliegue de una arquitectura para la comunicación de buzones inteligentes en la Comunidad de Madrid, garantizando conectividad, gestión remota y fiabilidad operativa."
         },
         "projectsNote": "Más información en la sección Proyectos."
+    },
+    "formation": {
+        "title": "Formación",
+        "intro": "Esta es una vista general de mi trayectoria académica y de la formación complementaria que he realizado en el ámbito de la informática y las telecomunicaciones.",
+        "formalTitle": "Formación reglada",
+        "degree": {
+            "date": "2020 — 2024",
+            "title": "Grado en Ingeniería de Sistemas de Información",
+            "center": "Universidad de Alcalá",
+            "location": "Alcalá de Henares, Madrid",
+            "desc": "Formación centrada en el diseño, desarrollo y gestión de sistemas de información, combinando conocimientos de ingeniería de software, arquitecturas empresariales y gestión de proyectos TIC.",
+            "d1": "Especialización en arquitectura de software y sistemas distribuidos.",
+            "d2": "Participación en proyectos de desarrollo web y backend en equipo.",
+            "d3": "Trabajo de fin de grado en colaboración con el grupo de investigación GEINTRA."
+        },
+        "cfgs": {
+            "date": "2018 — 2020",
+            "title": "Ciclo Formativo de Grado Superior en Telecomunicaciones e Informática",
+            "center": "Instituto Antonio Machado",
+            "location": "Alcalá de Henares, Madrid",
+            "desc": "Programa orientado a la administración de sistemas, redes, comunicaciones y fundamentos de programación, con un enfoque muy práctico.",
+            "d1": "Administración de sistemas operativos y redes locales.",
+            "d2": "Primer contacto con programación y entornos de desarrollo.",
+            "d3": "Prácticas en empresa en el área de soporte técnico e infraestructuras."
+        },
+        "certText": "Puedes consultar una copia de mis títulos oficiales (con datos personales sensibles ocultos) en el siguiente enlace:",
+        "certBtn": "Ver títulos oficiales (PDF)",
+        "coursesTitle": "Cursos y certificaciones",
+        "courses": {
+            "ccna": {
+                "title": "Certificación en Fundamentos de Redes CCNA",
+                "meta": "Proveedor de Certificación CISCO · 2020",
+                "desc": "Conceptos de redes, modelos OSI/TCP-IP, direccionamiento, switching y routing básico, con enfoque a entornos empresariales."
+            },
+            "erasmus": {
+                "title": "Programa Erasmus – Ciberseguridad y Cloud Computing (Nivel Máster)",
+                "meta": "FH JOANNEUM University of Applied Sciences · Austria · 2023",
+                "desc": "Formación presencial en Austria en ciberseguridad y computación en la nube dentro de un programa internacional."
+            },
+            "angular": {
+                "title": "Curso de Desarrollo Web con Angular",
+                "meta": "INDRA · 2025",
+                "desc": "Desarrollo de aplicaciones SPA con Angular, consumo de APIs REST, routing avanzado y buenas prácticas de organización de proyectos."
+            },
+            "gis": {
+                "title": "Curso de Luciad para desarrollo de modelos GIS",
+                "meta": "INDRA · 2025",
+                "desc": "Visualización de datos geoespaciales con Luciad, integración de modelos GIS en aplicaciones web y optimización de rendimiento."
+            },
+            "git": {
+                "title": "Curso de Git y Control de Versiones",
+                "meta": "Universidad de Alcalá · 2021",
+                "desc": "Trabajo colaborativo con Git, ramas, flujo de trabajo con pull requests y buenas prácticas para proyectos de equipo."
+            },
+            "aws": {
+                "title": "AWS Certified Solutions Architect – Associate (En curso)",
+                "meta": "Amazon Web Services · 2021",
+                "desc": "Fundamentos de arquitectura en la nube, diseño de soluciones escalables, seguridad y optimización de costos en AWS."
+            }
+        }
+    },
+    "contact": {
+        "title": "Contacto",
+        "intro": "Si quieres ponerte en contacto conmigo para hablar sobre oportunidades, colaborar en un proyecto o simplemente hacer una consulta, puedes utilizar el formulario o cualquiera de los medios que encontrarás a continuación.",
+        "infoTitle": "Información de contacto",
+        "labels": {
+            "email": "Email",
+            "linkedin": "LinkedIn",
+            "github": "GitHub"
+        },
+        "note": "Intento responder lo antes posible a todos los mensajes relacionados con desarrollo, formación y proyectos tecnológicos.",
+        "formTitle": "Envíame un mensaje",
+        "form": {
+            "nameLabel": "Nombre",
+            "namePlaceholder": "Tu nombre",
+            "emailLabel": "Email",
+            "emailPlaceholder": "tu.email@ejemplo.com",
+            "subjectLabel": "Asunto",
+            "subjectPlaceholder": "Motivo del mensaje",
+            "messageLabel": "Mensaje",
+            "messagePlaceholder": "Cuéntame brevemente en qué puedo ayudarte",
+            "submit": "Enviar mensaje",
+            "sending": "Enviando..."
+        }
     }
 }

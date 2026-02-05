@@ -14,12 +14,11 @@ export class AppComponent {
   title = 'portfolio-angular';
   currentLang = 'es';
   constructor(private translate: TranslateService) {
-    this.translate.addLangs(['es', 'en', 'de']);
+    this.translate.addLangs(['es', 'en', 'de', 'fr']);
     this.translate.setDefaultLang('es');
 
     const browserLang = this.translate.getBrowserLang();
-    const lang = browserLang && ['es', 'en', 'de'].includes(browserLang) ? browserLang : 'es';
-
+    const lang = browserLang && ['es', 'en', 'de', 'fr'].includes(browserLang) ? browserLang : 'es';
     this.currentLang = lang;
     this.translate.use(lang);
   }

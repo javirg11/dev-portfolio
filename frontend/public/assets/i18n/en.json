@@ -1,45 +1,131 @@
 {
     "about": {
         "title": "About me",
-        "hero": "I am passionate about technology with a particular interest in web development, artificial intelligence, data analysis and cloud architecture. I enjoy building useful, scalable and elegant solutions.",
+        "hero": "Hi! I'm Javier, a technology enthusiast with a solid background in programming. I'm especially interested in software development, artificial intelligence and data management, as well as everything related to cloud deployments, API integration and CI/CD pipeline automation.",
         "profileTitle": "Professional profile",
-        "profileText": "I consider myself curious, consistent and eager to learn. I enjoy working on projects where I can combine development, automation, cloud deployments and CI/CD best practices.",
-        "areasTitle": "Areas that I’m passionate about",
+        "profileText": "I consider myself a person oriented towards continuous improvement and learning cutting-edge technologies. I really enjoy projects where architecture and code quality are a priority. I have experience working in collaborative and multidisciplinary environments, which has allowed me to develop strong communication and teamwork skills. <br>I created this portfolio to present myself in a more complete way and to have a place where I can store the projects I develop throughout my career and prevent them from getting lost in the GitHub black hole.",
+        "areasTitle": "Areas I'm passionate about",
         "areas": {
             "webTitle": "Software Development",
             "webText": "Building modern applications with Angular, TypeScript and REST APIs.",
-            "GisTitle": "Geospatial Models",
-            "GisText": "Development of web GIS libraries, integration of geospatial models and visualization of geographic data.",
-            "backendTitle": "Backend & APIs",
-            "backendText": "Design and development of backend services, REST APIs, business logic and connection with databases.",
             "aiTitle": "Artificial Intelligence",
-            "aiText": "Lightweight models, classification, embeddings and automation with AI.",
+            "aiText": "Lightweight models, classification, embeddings and AI-driven automation.",
             "dataTitle": "Data",
-            "dataText": "Extraction, analysis and visualisation to obtain real value.",
+            "dataText": "Extraction, analysis and visualization to obtain real value.",
             "cloudTitle": "Cloud & DevOps",
-            "cloudText": "Cloud deployments, CI/CD, containers and automation with pipelines.",
+            "cloudText": "Cloud deployments, CI/CD, containers and pipeline automation.",
+            "GisTitle": "Geospatial Models",
+            "GisText": "Development of web GIS libraries, integration of geospatial models and geographic data visualization.",
+            "backendTitle": "Backend & APIs",
+            "backendText": "Design and development of backend services, REST APIs, business logic and database integration."
         },
         "experienceTitle": "Experience",
         "exp": {
             "uahDate": "2020 — 2023",
             "uahRole": "Research Assistant",
-            "uahCompany": "Universidad de Alcalá",
-            "uahDesc": "Applied research on emerging technologies, internal tool prototyping, data management and development of small software modules for experimental studies. Collaborative work with research groups.",
+            "uahCompany": "University of Alcalá",
+            "uahDesc": "Applied research in emerging technologies, prototyping internal tools, data management and development of small software modules for experimental studies. Collaborative work with research groups.",
             "indraDate": "2024 — Present",
-            "indraRole": "Developer / Technical Consultant",
+            "indraRole": "Software Development Engineer",
             "indraCompany": "Indra",
-            "indraDesc": "Development of internal solutions, application maintenance, API integrations, CI/CD pipelines and deployment support. Participation in real projects with clients and complex infrastructures."
+            "indraDesc": "Development of internal solutions, application maintenance, API integration, CI/CD pipelines and deployment support. Participation in real projects with clients and complex infrastructures."
         },
-        "projectsTitle": "Highlighted projects",
-        "projectsIntro": "Here you can add a short description of some relevant projects:",
+        "projectsTitle": "Featured projects",
+        "projectsIntro": "Some of the projects I have enjoyed working on the most:",
         "projects": {
-            "aTitle": "Project A",
-            "aText": "Web application for real-time data analysis with dashboard, filters and API consumption. (Sample description)",
-            "bTitle": "Project B",
-            "bText": "Deployment automation system with CI/CD, Docker and GitHub Actions. (Sample description)",
-            "cTitle": "Project C",
-            "cText": "Experimental application using AI for text classification. (Sample description)"
+            "aTitle": "Physical activity level detection using AI",
+            "aText": "Research project that collects data using custom IMUs, processes it and trains ML models to detect physical activity levels in patients. Models were later validated in real physiotherapy studies. Published paper: https://ieeexplore.ieee.org/abstract/document/9856513",
+            "bTitle": "Medical test automation with sensors and mobile app",
+            "bText": "Development of a mobile app connected to medical sensors to record clinical tests and store data in a central database. Integration with a web platform displaying charts, history and user roles.",
+            "cTitle": "Web GIS library for defense applications",
+            "cText": "Implementation of a web GIS library with a decoupled architecture for reuse across multiple projects. Provides geospatial abstractions and tools for defense support systems.",
+            "dTitle": "SIBA - Correos (2022-2023)",
+            "dText": "Development and deployment of an architecture for communication with smart mailboxes in the Community of Madrid, ensuring connectivity, remote management and operational reliability."
         },
         "projectsNote": "More information in the Projects section."
+    },
+    "formation": {
+        "title": "Education",
+        "intro": "This is an overview of my academic background and the complementary training I have completed in the fields of computer science and telecommunications.",
+        "formalTitle": "Formal education",
+        "degree": {
+            "date": "2020 — 2024",
+            "title": "Bachelor's Degree in Information Systems Engineering",
+            "center": "University of Alcalá",
+            "location": "Alcalá de Henares, Madrid",
+            "desc": "Training focused on the design, development and management of information systems, combining software engineering, enterprise architectures and ICT project management.",
+            "d1": "Specialization in software architecture and distributed systems.",
+            "d2": "Participation in team-based web and backend development projects.",
+            "d3": "Bachelor's thesis developed in collaboration with the GEINTRA research group."
+        },
+        "cfgs": {
+            "date": "2018 — 2020",
+            "title": "Higher Vocational Training in Telecommunications and Computing",
+            "center": "Antonio Machado Institute",
+            "location": "Alcalá de Henares, Madrid",
+            "desc": "Program focused on system administration, networks, communications and programming fundamentals, with a strong practical approach.",
+            "d1": "Administration of operating systems and local networks.",
+            "d2": "First contact with programming and development environments.",
+            "d3": "Company internship in technical support and infrastructure."
+        },
+        "certText": "You can view a copy of my official diplomas (with sensitive personal data hidden) at the following link:",
+        "certBtn": "View official diplomas (PDF)",
+        "coursesTitle": "Courses and certifications",
+        "courses": {
+            "ccna": {
+                "title": "CCNA Networking Fundamentals Certification",
+                "meta": "CISCO Certification Provider · 2020",
+                "desc": "Networking concepts, OSI/TCP-IP models, addressing, switching and basic routing, focused on enterprise environments."
+            },
+            "erasmus": {
+                "title": "Erasmus Program – Cybersecurity and Cloud Computing (Master level)",
+                "meta": "FH JOANNEUM University of Applied Sciences · Austria · 2023",
+                "desc": "On-site training in Austria focused on cybersecurity and cloud computing within an international program."
+            },
+            "angular": {
+                "title": "Web Development with Angular Course",
+                "meta": "INDRA · 2025",
+                "desc": "Development of SPA applications with Angular, REST API consumption, advanced routing and project organization best practices."
+            },
+            "gis": {
+                "title": "Luciad Course for GIS Model Development",
+                "meta": "INDRA · 2025",
+                "desc": "Geospatial data visualization with Luciad, GIS model integration into web applications and performance optimization."
+            },
+            "git": {
+                "title": "Git and Version Control Course",
+                "meta": "University of Alcalá · 2021",
+                "desc": "Collaborative work with Git, branching, pull request workflows and best practices for team projects."
+            },
+            "aws": {
+                "title": "AWS Certified Solutions Architect – Associate (In progress)",
+                "meta": "Amazon Web Services · 2021",
+                "desc": "Cloud architecture fundamentals, scalable solution design, security and cost optimization on AWS."
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "intro": "If you would like to get in touch to discuss opportunities, collaborate on a project or simply ask a question, you can use the form or any of the contact methods below.",
+        "infoTitle": "Contact information",
+        "labels": {
+            "email": "Email",
+            "linkedin": "LinkedIn",
+            "github": "GitHub"
+        },
+        "note": "I try to respond as quickly as possible to all messages related to development, training and technology projects.",
+        "formTitle": "Send me a message",
+        "form": {
+            "nameLabel": "Name",
+            "namePlaceholder": "Your name",
+            "emailLabel": "Email",
+            "emailPlaceholder": "your.email@example.com",
+            "subjectLabel": "Subject",
+            "subjectPlaceholder": "Reason for your message",
+            "messageLabel": "Message",
+            "messagePlaceholder": "Tell me briefly how I can help you",
+            "submit": "Send message",
+            "sending": "Sending..."
+        }
     }
 }

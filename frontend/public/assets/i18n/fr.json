@@ -1,0 +1,131 @@
+{
+    "about": {
+        "title": "À propos de moi",
+        "hero": "Bonjour ! Je suis Javier, passionné de technologie avec une solide base en programmation. Je m'intéresse particulièrement au développement logiciel, à l'intelligence artificielle et à la gestion des données, ainsi qu'à tout ce qui concerne les déploiements cloud, l'intégration d'API et l'automatisation via des pipelines CI/CD.",
+        "profileTitle": "Profil professionnel",
+        "profileText": "Je me considère comme une personne orientée vers l'amélioration continue et l'apprentissage des technologies les plus avancées. J'apprécie particulièrement les projets où l'architecture et la qualité du code sont prioritaires. J'ai de l'expérience dans des environnements collaboratifs et multidisciplinaires, ce qui m'a permis de développer mes compétences en communication et en travail d'équipe. <br>J'ai créé ce portfolio afin de me présenter de manière plus complète et de disposer d'un espace pour conserver les projets que je développe tout au long de ma carrière et éviter qu'ils ne se perdent dans le trou noir de GitHub.",
+        "areasTitle": "Domaines qui me passionnent",
+        "areas": {
+            "webTitle": "Développement logiciel",
+            "webText": "Création d'applications modernes avec Angular, TypeScript et APIs REST.",
+            "aiTitle": "Intelligence artificielle",
+            "aiText": "Modèles légers, classification, embeddings et automatisation avec l'IA.",
+            "dataTitle": "Données",
+            "dataText": "Extraction, analyse et visualisation pour obtenir une réelle valeur.",
+            "cloudTitle": "Cloud & DevOps",
+            "cloudText": "Déploiements cloud, CI/CD, conteneurs et automatisation des pipelines.",
+            "GisTitle": "Modèles géospatiaux",
+            "GisText": "Développement de bibliothèques GIS web, intégration de modèles géospatiaux et visualisation de données géographiques.",
+            "backendTitle": "Backend & APIs",
+            "backendText": "Conception et développement de services backend, APIs REST, logique métier et intégration avec des bases de données."
+        },
+        "experienceTitle": "Expérience",
+        "exp": {
+            "uahDate": "2020 — 2023",
+            "uahRole": "Assistant de recherche",
+            "uahCompany": "Université d'Alcalá",
+            "uahDesc": "Recherche appliquée dans les technologies émergentes, prototypage d'outils internes, gestion de données et développement de petits modules logiciels pour des études expérimentales. Travail collaboratif avec des groupes de recherche.",
+            "indraDate": "2024 — Présent",
+            "indraRole": "Ingénieur en développement logiciel",
+            "indraCompany": "Indra",
+            "indraDesc": "Développement de solutions internes, maintenance d'applications, intégration d'APIs, pipelines CI/CD et support aux déploiements. Participation à des projets réels avec des clients et des infrastructures complexes."
+        },
+        "projectsTitle": "Projets sélectionnés",
+        "projectsIntro": "Certains des projets sur lesquels j'ai le plus apprécié travailler :",
+        "projects": {
+            "aTitle": "Détection des niveaux d'activité physique avec l'IA",
+            "aText": "Projet de recherche collectant des données via des IMU personnalisées, les traitant et entraînant des modèles ML pour détecter les niveaux d'activité physique chez les patients. Les modèles ont ensuite été validés dans des études réelles de physiothérapie. Article publié : https://ieeexplore.ieee.org/abstract/document/9856513",
+            "bTitle": "Automatisation de tests médicaux avec capteurs et application mobile",
+            "bText": "Développement d'une application mobile connectée à des capteurs médicaux pour enregistrer des tests cliniques et stocker les données dans une base centrale. Intégration avec une plateforme web affichant graphiques, historiques et rôles utilisateurs.",
+            "cTitle": "Bibliothèque GIS web pour applications de défense",
+            "cText": "Implémentation d'une bibliothèque GIS web avec architecture découplée pour réutilisation dans plusieurs projets. Fournit des abstractions et outils géospatiaux pour systèmes de soutien à la défense.",
+            "dTitle": "SIBA - Correos (2022-2023)",
+            "dText": "Développement et déploiement d'une architecture pour la communication avec des boîtes aux lettres intelligentes dans la Communauté de Madrid, garantissant connectivité, gestion à distance et fiabilité opérationnelle."
+        },
+        "projectsNote": "Plus d'informations dans la section Projets."
+    },
+    "formation": {
+        "title": "Formation",
+        "intro": "Voici un aperçu de mon parcours académique ainsi que de la formation complémentaire que j'ai suivie dans les domaines de l'informatique et des télécommunications.",
+        "formalTitle": "Formation académique",
+        "degree": {
+            "date": "2020 — 2024",
+            "title": "Licence en ingénierie des systèmes d'information",
+            "center": "Université d'Alcalá",
+            "location": "Alcalá de Henares, Madrid",
+            "desc": "Formation axée sur la conception, le développement et la gestion des systèmes d'information, combinant génie logiciel, architectures d'entreprise et gestion de projets TIC.",
+            "d1": "Spécialisation en architecture logicielle et systèmes distribués.",
+            "d2": "Participation à des projets de développement web et backend en équipe.",
+            "d3": "Projet de fin d'études réalisé en collaboration avec le groupe de recherche GEINTRA."
+        },
+        "cfgs": {
+            "date": "2018 — 2020",
+            "title": "Formation professionnelle supérieure en télécommunications et informatique",
+            "center": "Institut Antonio Machado",
+            "location": "Alcalá de Henares, Madrid",
+            "desc": "Programme orienté vers l'administration de systèmes, réseaux, communications et bases de la programmation, avec une forte approche pratique.",
+            "d1": "Administration de systèmes d'exploitation et de réseaux locaux.",
+            "d2": "Premier contact avec la programmation et les environnements de développement.",
+            "d3": "Stage en entreprise dans le domaine du support technique et des infrastructures."
+        },
+        "certText": "Vous pouvez consulter une copie de mes diplômes officiels (avec données personnelles sensibles masquées) via le lien suivant :",
+        "certBtn": "Voir les diplômes officiels (PDF)",
+        "coursesTitle": "Cours et certifications",
+        "courses": {
+            "ccna": {
+                "title": "Certification CCNA – Fondamentaux des réseaux",
+                "meta": "Fournisseur de certification CISCO · 2020",
+                "desc": "Concepts réseaux, modèles OSI/TCP-IP, adressage, switching et routage de base, orientés vers les environnements d'entreprise."
+            },
+            "erasmus": {
+                "title": "Programme Erasmus – Cybersécurité et Cloud Computing (Niveau Master)",
+                "meta": "FH JOANNEUM University of Applied Sciences · Autriche · 2023",
+                "desc": "Formation en présentiel en Autriche axée sur la cybersécurité et le cloud computing dans le cadre d'un programme international."
+            },
+            "angular": {
+                "title": "Cours de développement web avec Angular",
+                "meta": "INDRA · 2025",
+                "desc": "Développement d'applications SPA avec Angular, consommation d'APIs REST, routage avancé et bonnes pratiques d'organisation de projets."
+            },
+            "gis": {
+                "title": "Cours Luciad pour le développement de modèles GIS",
+                "meta": "INDRA · 2025",
+                "desc": "Visualisation de données géospatiales avec Luciad, intégration de modèles GIS dans des applications web et optimisation des performances."
+            },
+            "git": {
+                "title": "Cours Git et contrôle de versions",
+                "meta": "Université d'Alcalá · 2021",
+                "desc": "Travail collaboratif avec Git, branches, flux de travail avec pull requests et bonnes pratiques pour les projets en équipe."
+            },
+            "aws": {
+                "title": "AWS Certified Solutions Architect – Associate (En cours)",
+                "meta": "Amazon Web Services · 2021",
+                "desc": "Fondamentaux de l'architecture cloud, conception de solutions évolutives, sécurité et optimisation des coûts sur AWS."
+            }
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "intro": "Si vous souhaitez me contacter pour discuter d'opportunités, collaborer sur un projet ou simplement poser une question, vous pouvez utiliser le formulaire ou l'un des moyens ci-dessous.",
+        "infoTitle": "Informations de contact",
+        "labels": {
+            "email": "Email",
+            "linkedin": "LinkedIn",
+            "github": "GitHub"
+        },
+        "note": "J'essaie de répondre le plus rapidement possible à tous les messages liés au développement, à la formation et aux projets technologiques.",
+        "formTitle": "Envoyez-moi un message",
+        "form": {
+            "nameLabel": "Nom",
+            "namePlaceholder": "Votre nom",
+            "emailLabel": "Email",
+            "emailPlaceholder": "votre.email@exemple.com",
+            "subjectLabel": "Objet",
+            "subjectPlaceholder": "Motif de votre message",
+            "messageLabel": "Message",
+            "messagePlaceholder": "Expliquez brièvement comment je peux vous aider",
+            "submit": "Envoyer le message",
+            "sending": "Envoi en cours..."
+        }
+    }
+}
