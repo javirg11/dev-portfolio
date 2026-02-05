@@ -127,5 +127,69 @@
             "submit": "Send message",
             "sending": "Sending..."
         }
+    },
+    "work": {
+        "title": "Projects",
+        "intro": "A selection of personal and professional projects. I will progressively add more public demos. Some projects handle sensitive information and are marked with",
+        "introLock": "therefore they do not have a public demo.",
+        "close": "Close",
+        "roleLabel": "Role",
+        "techUsed": "Technologies used",
+        "links": "Links",
+        "viewDemo": "View demo",
+        "viewCode": "View code",
+        "confidentialTitle": "Confidential project",
+        "confidentialDefault": "Due to sensitive or protected information, the demo and the code are not public.",
+        "confidentialTooltip": "Confidential project. Demo and code are not public.",
+        "buttons": {
+            "info": "Info",
+            "try": "Try",
+            "privateDemo": "Private demo"
+        },
+        "alerts": {
+            "confidential": "This project is confidential and its demo is not public.",
+            "demoNotAvailable": "The demo is not available yet."
+        },
+        "projects": {
+            "p2": {
+                "title": "AI Review Chat",
+                "short": "Chat that returns positive/negative sentiment for a review.",
+                "long": "Project where an ML model is trained on a dataset of 15,000 movie reviews to classify sentiment (positive/negative) with a confidence level. The backend is deployed in the cloud using Render's free tier.",
+                "role": "Designed and developed the ML model, deployment and UI"
+            },
+            "p3": {
+                "title": "Movie Finder (TESTING)",
+                "short": "Frontend that consumes a public movies API.",
+                "long": "App that lets you search movies, view basic details and practice pagination and error handling.",
+                "role": "Implemented search logic and UI"
+            },
+            "p4": {
+                "title": "Development Brick for a GIS Model",
+                "short": "GIS development.",
+                "long": "Project for INDRA where a GIS model is built using the LuciadRIA engine. Includes an abstraction layer and configuration so the project can be reused across the company and avoid tight coupling.",
+                "role": "Software development engineer"
+            },
+            "p5": {
+                "title": "Physical activity level detection with AI",
+                "short": "Classifying physical activity levels from IMU data in patients.",
+                "long": "Research project where data was collected using custom IMUs placed on patients, signals were processed and cleaned, and Machine Learning models were trained to detect different physical activity levels. The models were later used in physiotherapy studies with real patients.",
+                "role": "Research, data processing and AI model development",
+                "confidentialReason": "This work involves clinical patient data in a research context, so the demo and the code are not public."
+            },
+            "p6": {
+                "title": "Automating medical tests with sensors and a mobile app",
+                "short": "Platform to record medical tests with custom devices and web visualization.",
+                "long": "Work where medical tests were automated through a mobile app connected to custom devices. Data was stored in a central database and consumed by a web application with charts, test history and user role management.",
+                "role": "End-to-end development and integration",
+                "confidentialReason": "The platform handles sensitive clinical information and does not provide a public demo."
+            },
+            "p7": {
+                "title": "SIBA - Correos",
+                "short": "Architecture for smart mailbox communication in the Community of Madrid, deployed on AWS.",
+                "long": "Development and deployment of an architecture for smart mailbox communication in the Community of Madrid, integrating IoT devices with Correos' central infrastructure and ensuring connectivity, monitoring and operational reliability.",
+                "role": "Service development and integration",
+                "confidentialReason": "The solution is part of Correos' internal infrastructure and does not have a public demo or repository."
+            }
+        }
     }
 }

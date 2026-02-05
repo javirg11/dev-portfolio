@@ -127,5 +127,69 @@
             "submit": "Nachricht senden",
             "sending": "Wird gesendet..."
         }
+    },
+    "work": {
+        "title": "Projekte",
+        "intro": "Eine Auswahl persönlicher und beruflicher Projekte. Ich werde nach und nach weitere öffentliche Demos hinzufügen. Einige Projekte verarbeiten sensible Informationen und sind mit",
+        "introLock": "gekennzeichnet, daher gibt es keine öffentliche Demo.",
+        "close": "Schließen",
+        "roleLabel": "Rolle",
+        "techUsed": "Verwendete Technologien",
+        "links": "Links",
+        "viewDemo": "Demo ansehen",
+        "viewCode": "Code ansehen",
+        "confidentialTitle": "Vertrauliches Projekt",
+        "confidentialDefault": "Aufgrund sensibler oder geschützter Informationen sind Demo und Code nicht öffentlich.",
+        "confidentialTooltip": "Vertrauliches Projekt. Demo und Code sind nicht öffentlich.",
+        "buttons": {
+            "info": "Info",
+            "try": "Ausprobieren",
+            "privateDemo": "Private Demo"
+        },
+        "alerts": {
+            "confidential": "Dieses Projekt ist vertraulich und seine Demo ist nicht öffentlich.",
+            "demoNotAvailable": "Die Demo ist noch nicht verfügbar."
+        },
+        "projects": {
+            "p2": {
+                "title": "KI-Chat für Reviews",
+                "short": "Chat, der das positive/negative Sentiment einer Review zurückgibt.",
+                "long": "Projekt, bei dem ein ML-Modell mit einem Datensatz von 15.000 Filmreviews trainiert wird, um Sentiment (positiv/negativ) mit einem Vertrauenswert zu klassifizieren. Das Backend wird in der Cloud über die kostenlose Render-Stufe bereitgestellt.",
+                "role": "Entwurf und Entwicklung des ML-Modells, Deployment und UI"
+            },
+            "p3": {
+                "title": "Filmsuche (TESTING)",
+                "short": "Frontend, das eine öffentliche Film-API nutzt.",
+                "long": "Anwendung zum Suchen von Filmen, Anzeigen grundlegender Details sowie zum Üben von Paginierung und Fehlerbehandlung.",
+                "role": "Implementierung der Suchlogik und UI"
+            },
+            "p4": {
+                "title": "Entwicklungsbaustein für ein GIS-Modell",
+                "short": "Entwicklung eines GIS.",
+                "long": "Projekt für INDRA, bei dem ein GIS-Modell mit der LuciadRIA-Engine entwickelt wird. Mit Abstraktionsschicht und Konfiguration, damit das Projekt unternehmensweit wiederverwendbar ist und Kopplungen vermieden werden.",
+                "role": "Softwareentwicklungsingenieur"
+            },
+            "p5": {
+                "title": "Erkennung von körperlichen Aktivitätsniveaus mit KI",
+                "short": "Klassifikation von Aktivitätsniveaus anhand von IMU-Daten bei Patienten.",
+                "long": "Forschungsprojekt, bei dem Daten über maßgeschneiderte IMUs an Patienten erfasst, Signale verarbeitet und bereinigt sowie Machine-Learning-Modelle trainiert wurden, um verschiedene Aktivitätsniveaus zu erkennen. Die Modelle wurden später in physiotherapeutischen Studien mit echten Patienten eingesetzt.",
+                "role": "Forschung, Datenverarbeitung und Entwicklung von KI-Modellen",
+                "confidentialReason": "Es werden klinische Patientendaten im Forschungskontext verarbeitet, daher sind Demo und Code nicht öffentlich."
+            },
+            "p6": {
+                "title": "Automatisierung medizinischer Tests mit Sensoren und mobiler App",
+                "short": "Plattform zur Erfassung medizinischer Tests mit Spezialgeräten und Web-Visualisierung.",
+                "long": "Arbeit, bei der medizinische Tests über eine mobile App automatisiert wurden, die mit Spezialgeräten verbunden ist. Die Daten wurden in einer zentralen Datenbank gespeichert und über eine Webanwendung mit Diagrammen, Testhistorie und Rollenverwaltung bereitgestellt.",
+                "role": "End-to-End-Entwicklung und Integration",
+                "confidentialReason": "Die Plattform verarbeitet sensible klinische Informationen und bietet keine öffentliche Demo."
+            },
+            "p7": {
+                "title": "SIBA - Correos",
+                "short": "Architektur für die Kommunikation intelligenter Briefkästen in der Region Madrid, bereitgestellt auf AWS.",
+                "long": "Entwicklung und Deployment einer Architektur für die Kommunikation intelligenter Briefkästen in der Autonomen Gemeinschaft Madrid, mit Integration von IoT-Geräten in die zentrale Infrastruktur von Correos sowie Sicherstellung von Konnektivität, Monitoring und Betriebssicherheit.",
+                "role": "Entwicklung und Integration von Services",
+                "confidentialReason": "Die Lösung ist Teil der internen Infrastruktur von Correos und hat keine öffentliche Demo oder Repository."
+            }
+        }
     }
 }

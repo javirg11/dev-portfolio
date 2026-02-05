@@ -127,5 +127,69 @@
             "submit": "Envoyer le message",
             "sending": "Envoi en cours..."
         }
+    },
+    "work": {
+        "title": "Projets",
+        "intro": "Une sélection de projets personnels et professionnels. J’ajouterai progressivement davantage de démos publiques. Certains projets traitent des informations sensibles et sont marqués avec",
+        "introLock": "et ne disposent donc pas de démo publique.",
+        "close": "Fermer",
+        "roleLabel": "Rôle",
+        "techUsed": "Technologies utilisées",
+        "links": "Liens",
+        "viewDemo": "Voir la démo",
+        "viewCode": "Voir le code",
+        "confidentialTitle": "Projet confidentiel",
+        "confidentialDefault": "En raison de données sensibles ou protégées, la démo et le code ne sont pas publics.",
+        "confidentialTooltip": "Projet confidentiel. La démo et le code ne sont pas publics.",
+        "buttons": {
+            "info": "Info",
+            "try": "Essayer",
+            "privateDemo": "Démo privée"
+        },
+        "alerts": {
+            "confidential": "Ce projet est confidentiel et sa démo n’est pas publique.",
+            "demoNotAvailable": "La démo n’est pas encore disponible."
+        },
+        "projects": {
+            "p2": {
+                "title": "Chat IA pour avis",
+                "short": "Chat qui renvoie un sentiment positif/négatif pour un avis.",
+                "long": "Projet où un modèle de ML est entraîné sur une base de 15 000 avis de films afin de classifier le sentiment (positif/négatif) avec un niveau de confiance. Le backend est déployé dans le cloud via l’offre gratuite de Render.",
+                "role": "Conception et développement du modèle ML, du déploiement et de l’interface"
+            },
+            "p3": {
+                "title": "Moteur de recherche de films (TESTING)",
+                "short": "Frontend qui consomme une API publique de films.",
+                "long": "Application permettant de rechercher des films, d’afficher des détails de base et de pratiquer la pagination ainsi que la gestion d’erreurs.",
+                "role": "Implémentation de la logique de recherche et de l’UI"
+            },
+            "p4": {
+                "title": "Brique de développement pour modèle GIS",
+                "short": "Développement d’un GIS.",
+                "long": "Projet pour INDRA consistant à développer un modèle GIS avec le moteur LuciadRIA. Mise en place d’une couche d’abstraction et de configuration afin que le projet soit réutilisable dans l’entreprise et évite les couplages forts.",
+                "role": "Ingénieur développement logiciel"
+            },
+            "p5": {
+                "title": "Détection des niveaux d’activité physique avec l’IA",
+                "short": "Classification des niveaux d’activité à partir de données d’IMU chez des patients.",
+                "long": "Projet de recherche où des données ont été collectées via des IMU sur mesure placées sur des patients, puis les signaux ont été traités et nettoyés avant d’entraîner des modèles de Machine Learning pour détecter différents niveaux d’activité physique. Les modèles ont ensuite été utilisés dans des études de physiothérapie avec de vrais patients.",
+                "role": "Recherche, traitement des données et développement de modèles IA",
+                "confidentialReason": "Le projet implique des données cliniques de patients dans un contexte de recherche ; la démo et le code ne sont donc pas publics."
+            },
+            "p6": {
+                "title": "Automatisation de tests médicaux avec capteurs et application mobile",
+                "short": "Plateforme pour enregistrer des tests médicaux avec dispositifs dédiés et visualisation web.",
+                "long": "Travail visant à automatiser des tests médicaux via une application mobile connectée à des dispositifs dédiés. Les données étaient stockées dans une base centrale et consultées via une application web avec graphiques, historique des tests et gestion des rôles utilisateurs.",
+                "role": "Développement et intégration de bout en bout",
+                "confidentialReason": "La plateforme traite des informations cliniques sensibles et ne propose pas de démo publique."
+            },
+            "p7": {
+                "title": "SIBA - Correos",
+                "short": "Architecture pour la communication de boîtes aux lettres intelligentes dans la Communauté de Madrid, déployée sur AWS.",
+                "long": "Développement et déploiement d’une architecture de communication pour des boîtes aux lettres intelligentes dans la Communauté de Madrid, intégrant des dispositifs IoT à l’infrastructure centrale de Correos et garantissant connectivité, supervision et fiabilité opérationnelle.",
+                "role": "Développement et intégration de services",
+                "confidentialReason": "La solution fait partie de l’infrastructure interne de Correos et ne dispose pas de démo ni de dépôt publics."
+            }
+        }
     }
 }
