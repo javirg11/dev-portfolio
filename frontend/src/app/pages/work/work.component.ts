@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { SentimentChatService } from '../../services/sentiment-chat.service';
 
 interface Project {
   id: number;
@@ -28,7 +29,8 @@ export class WorkComponent {
 
   constructor(
     private router: Router,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private sentimentService: SentimentChatService
   ) { }
 
   projects: Project[] = [
@@ -118,6 +120,9 @@ export class WorkComponent {
   }
 
   onDemoClick(project: Project) {
+    if (project.id === 2) {
+      this.sentimentService.analyze('Test')
+    }
     if (project.confidential) {
       alert(this.translate.instant('work.alerts.confidential'));
       return;
