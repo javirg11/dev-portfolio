@@ -22,7 +22,7 @@
         "experienceTitle": "Expérience",
         "exp": {
             "uahDate": "2020 — 2023",
-            "uahRole": "Assistant de recherche",
+            "uahRole": "Rechercher R&D",
             "uahCompany": "Université d'Alcalá",
             "uahDesc": "Recherche appliquée dans les technologies émergentes, prototypage d'outils internes, gestion de données et développement de petits modules logiciels pour des études expérimentales. Travail collaboratif avec des groupes de recherche.",
             "indraDate": "2024 — Présent",
@@ -191,5 +191,11 @@
                 "confidentialReason": "La solution fait partie de l’infrastructure interne de Correos et ne dispose pas de démo ni de dépôt publics."
             }
         }
+    },
+    "app": {
+        "title1": "À propos de moi",
+        "title2": "Projets",
+        "title3": "Formation",
+        "title4": "Contact"
     }
 }

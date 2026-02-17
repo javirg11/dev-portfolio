@@ -22,7 +22,7 @@
         "experienceTitle": "Experience",
         "exp": {
             "uahDate": "2020 — 2023",
-            "uahRole": "Research Assistant",
+            "uahRole": "Researcher R&D",
             "uahCompany": "University of Alcalá",
             "uahDesc": "Applied research in emerging technologies, prototyping internal tools, data management and development of small software modules for experimental studies. Collaborative work with research groups.",
             "indraDate": "2024 — Present",
@@ -191,5 +191,11 @@
                 "confidentialReason": "The solution is part of Correos' internal infrastructure and does not have a public demo or repository."
             }
         }
+    },
+    "app": {
+        "title1": "About me",
+        "title2": "Projects",
+        "title3": "Education",
+        "title4": "Contact"
     }
 }

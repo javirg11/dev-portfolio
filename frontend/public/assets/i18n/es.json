@@ -22,7 +22,7 @@
         "experienceTitle": "Experiencia",
         "exp": {
             "uahDate": "2020 — 2023",
-            "uahRole": "Ayudante de Investigación",
+            "uahRole": " Investigador R&D",
             "uahCompany": "Universidad de Alcalá",
             "uahDesc": "Investigación aplicada en tecnologías emergentes, prototipado de herramientas internas, gestión de datos y desarrollo de pequeños módulos software para estudios experimentales. Trabajo colaborativo con grupos de investigación.",
             "indraDate": "2024 — Actualidad",
@@ -191,5 +191,11 @@
                 "confidentialReason": "La solución forma parte de la infraestructura interna de Correos y no cuenta con demo ni repositorio públicos."
             }
         }
+    },
+    "app": {
+        "title1": "Sobre mí",
+        "title2": "Proyectos",
+        "title3": "Formación",
+        "title4": "Contacto"
     }
 }

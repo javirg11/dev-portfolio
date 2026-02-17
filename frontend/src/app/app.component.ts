@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, RouterLink,
-    RouterLinkActive],
+    RouterLinkActive, TranslateModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

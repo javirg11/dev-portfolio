@@ -191,5 +191,11 @@
                 "confidentialReason": "Die Lösung ist Teil der internen Infrastruktur von Correos und hat keine öffentliche Demo oder Repository."
             }
         }
+    },
+    "app": {
+        "title1": "Über mich",
+        "title2": "Projekte",
+        "title3": "Ausbildung",
+        "title4": "Kontakt"
     }
 }

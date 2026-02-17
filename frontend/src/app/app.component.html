@@ -5,16 +5,16 @@
 
         <nav class="main-nav">
             <a routerLink="/about" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                Sobre mí
+                {{ 'app.title1' | translate }}
             </a>
             <a routerLink="/work" routerLinkActive="active">
-                Proyectos
+                {{ 'app.title2' | translate }}
             </a>
             <a routerLink="/formation" routerLinkActive="active">
-                Formación
+                {{ 'app.title3' | translate }}
             </a>
             <a routerLink="/contact" routerLinkActive="active">
-                Contacto
+                {{ 'app.title4' | translate }}
             </a>
         </nav>
 
